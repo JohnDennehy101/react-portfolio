@@ -1,0 +1,44 @@
+$public-sans-font-family: 'Public Sans', sans-serif;
+.header-desktop {
+  background-color: grey;
+  display: flex;
+  width: 85%;
+  margin: 0 auto;
+  justify-content: space-between;
+  align-items: center;
+}
+.header-mobile {
+  background-color: grey;
+  display: flex;
+  width: 90%;
+  margin: 0 auto;
+  justify-content: space-between;
+  align-items: center;
+}
+img {
+  width: 60px;
+  height: 32px;
+}
+.hamburger-icon {
+  width: 24px;
+  height: 13px;
+}
+
+ul {
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+}
+li {
+  margin: 0 43px;
+  list-style-type: none;
+}
+li:nth-last-of-type(1) {
+  margin: 0 0 0 43px;
+}
+a {
+  text-decoration: none;
+  color: #33323d;
+  font-family: $public-sans-font-family;
+  line-height: 14px;
+}

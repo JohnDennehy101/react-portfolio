@@ -1,13 +1,15 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import './index.scss'
 import reportWebVitals from './reportWebVitals'
 import { BrowserRouter as Router, Switch, Route, Redirect } from 'react-router-dom'
 import HomePage from './pages/homePage'
+import Header from './components/header'
+import '../src/scss/index.scss'
 
 const App = () => {
   return (
     <Router>
+      <Header />
       <Switch>
         <Route component={HomePage} exact path='/' />
         <Redirect from='*' to='/' />
