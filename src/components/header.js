@@ -3,12 +3,11 @@ import { isMobile, isTablet } from 'react-device-detect'
 import { useState } from 'react'
 
 const Header = (props) => {
-  const [open, setOpen] = useState(false)
+  const [open, setOpen] = useState(false);
   const headerClass = isMobile ? 'header-mobile' : isTablet ? 'header-tablet' : 'header-desktop'
 
   const handleClick = () => {
     setOpen(!open)
-    console.log(open)
   }
   return (
     <>
@@ -40,8 +39,18 @@ const Header = (props) => {
             )}
           </header>
           {open ? (
-            <div>
-              <p>Modal content to go here</p>
+            <div id='modalDiv'>
+              <ul>
+                <li>
+                  <a href='#'>HOME</a>
+                </li>
+                <li>
+                  <a href='#'>PORTFOLIO</a>
+                </li>
+                <li>
+                  <a href='#'>CONTACT ME</a>
+                </li>
+              </ul>
             </div>
           ) : (
             <></>

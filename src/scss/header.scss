@@ -1,17 +1,18 @@
 $public-sans-font-family: 'Public Sans', sans-serif;
+$modal-mobile-background-colour: #33323d;
+$modal-mobile-font-colour: #ffffff;
+
 .header-desktop {
-  background-color: grey;
   display: flex;
   width: 85%;
-  margin: 0 auto;
+  margin: 40px auto 0 auto;
   justify-content: space-between;
   align-items: center;
 }
 .header-mobile {
-  background-color: grey;
   display: flex;
   width: 90%;
-  margin: 0 auto;
+  margin: 32px auto 0 auto;
   justify-content: space-between;
   align-items: center;
 }
@@ -41,4 +42,52 @@ a {
   color: #33323d;
   font-family: $public-sans-font-family;
   line-height: 14px;
+}
+
+#modalDiv {
+  width: 223px;
+  height: 186px;
+  position: absolute;
+  right: 32px;
+  top: 88px;
+  z-index: 1;
+  background-color: $modal-mobile-background-colour;
+
+  animation-duration: 1s;
+  animation-name: slidein;
+}
+
+@keyframes slidein {
+  from {
+    margin-right: -50%;
+    width: 223px;
+  }
+
+  to {
+    margin-bottom: 0%;
+  }
+}
+
+#modalDiv {
+  ul {
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 223px;
+    margin: 0;
+    padding: 0;
+    transform: translate(-50%, -50%);
+  }
+  li {
+    margin: 0;
+    font-size: 12px;
+  }
+  a {
+    color: $modal-mobile-font-colour;
+  }
 }
