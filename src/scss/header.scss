@@ -1,4 +1,5 @@
 $public-sans-font-family: 'Public Sans', sans-serif;
+$desktop-header-active-link-color: #5fb4a2;
 $modal-mobile-background-colour: #33323d;
 $modal-mobile-font-colour: #ffffff;
 
@@ -48,24 +49,13 @@ a {
   width: 223px;
   height: 186px;
   position: absolute;
-  right: 32px;
-  top: 88px;
+  right: -70%;
   z-index: 1;
   background-color: $modal-mobile-background-colour;
-
-  animation-duration: 1s;
-  animation-name: slidein;
 }
 
-@keyframes slidein {
-  from {
-    margin-right: -50%;
-    width: 223px;
-  }
-
-  to {
-    margin-bottom: 0%;
-  }
+.active {
+  color: $desktop-header-active-link-color;
 }
 
 #modalDiv {
@@ -90,4 +80,42 @@ a {
   a {
     color: $modal-mobile-font-colour;
   }
+}
+
+@keyframes slidein {
+  from {
+    right: -70%;
+    width: 223px;
+  }
+
+  to {
+    right: 32px;
+  }
+}
+
+@keyframes slideout {
+  from {
+    right: 32px;
+    width: 223px;
+  }
+
+  to {
+    right: -70%;
+  }
+}
+
+.modal-slide-in {
+  animation-duration: 1s;
+  animation-name: slidein;
+  animation-fill-mode: forwards;
+  right: 32px;
+  top: 88px;
+}
+
+.modal-slide-out {
+  animation-duration: 1s;
+  animation-name: slideout;
+  right: -70%;
+  animation-fill-mode: forwards;
+  top: 88px;
 }

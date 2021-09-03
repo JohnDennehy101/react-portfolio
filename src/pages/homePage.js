@@ -1,7 +1,5 @@
 const HomePage = (props) => {
-    return (
-        <></>
-    )
+  return <></>
 }
 
 export default HomePage

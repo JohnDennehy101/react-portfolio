@@ -1,13 +1,20 @@
 import '../scss/header.scss'
 import { isMobile, isTablet } from 'react-device-detect'
 import { useState } from 'react'
+import { NavLink } from 'react-router-dom'
 
 const Header = (props) => {
-  const [open, setOpen] = useState(false);
+  const [open, setOpen] = useState(false)
   const headerClass = isMobile ? 'header-mobile' : isTablet ? 'header-tablet' : 'header-desktop'
+  const [modalClass, setModalClass] = useState('')
 
   const handleClick = () => {
     setOpen(!open)
+    if (open) {
+      setModalClass('modal-slide-out')
+    } else {
+      setModalClass('modal-slide-in')
+    }
   }
   return (
     <>
@@ -17,13 +24,19 @@ const Header = (props) => {
 
           <ul>
             <li>
-              <a href='#'>HOME</a>
+              <NavLink exact activeClassName='active' to='/'>
+                HOME
+              </NavLink>
             </li>
             <li>
-              <a href='#'>PORTFOLIO</a>
+              <NavLink activeClassName='active' to='/portfolio'>
+                PORTFOLIO
+              </NavLink>
             </li>
             <li>
-              <a href='#'>CONTACT ME</a>
+              <NavLink activeClassName='active' to='/contact'>
+                CONTACT ME
+              </NavLink>
             </li>
           </ul>
         </header>
@@ -38,23 +51,19 @@ const Header = (props) => {
               <img src='/images/icons/close.svg' className='hamburger-icon' alt='Close icon logo' onClick={handleClick} />
             )}
           </header>
-          {open ? (
-            <div id='modalDiv'>
-              <ul>
-                <li>
-                  <a href='#'>HOME</a>
-                </li>
-                <li>
-                  <a href='#'>PORTFOLIO</a>
-                </li>
-                <li>
-                  <a href='#'>CONTACT ME</a>
-                </li>
-              </ul>
-            </div>
-          ) : (
-            <></>
-          )}{' '}
+          <div id='modalDiv' className={modalClass}>
+            <ul>
+              <li>
+                <a href='#'>HOME</a>
+              </li>
+              <li>
+                <a href='#'>PORTFOLIO</a>
+              </li>
+              <li>
+                <a href='#'>CONTACT ME</a>
+              </li>
+            </ul>
+          </div>
         </>
       )}
     </>
