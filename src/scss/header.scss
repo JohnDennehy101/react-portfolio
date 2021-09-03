@@ -10,6 +10,13 @@ $modal-mobile-font-colour: #ffffff;
   justify-content: space-between;
   align-items: center;
 }
+.header-tablet {
+  display: flex;
+  width: 90%;
+  margin: 40px auto 0 auto;
+  justify-content: space-between;
+  align-items: center;
+}
 .header-mobile {
   display: flex;
   width: 90%;
@@ -27,7 +34,7 @@ img {
 }
 
 ul {
-  width: 50%;
+  margin-left: 120px;
   display: flex;
   justify-content: flex-end;
 }

@@ -1,11 +1,11 @@
 import '../scss/header.scss'
-import { isMobile, isTablet } from 'react-device-detect'
+import { isMobileOnly, isTablet } from 'react-device-detect'
 import { useState } from 'react'
 import { NavLink } from 'react-router-dom'
 
 const Header = (props) => {
   const [open, setOpen] = useState(false)
-  const headerClass = isMobile ? 'header-mobile' : isTablet ? 'header-tablet' : 'header-desktop'
+  const headerClass = isMobileOnly ? 'header-mobile' : isTablet ? 'header-tablet' : 'header-desktop'
   const [modalClass, setModalClass] = useState('')
 
   const handleClick = () => {
@@ -18,7 +18,7 @@ const Header = (props) => {
   }
   return (
     <>
-      {!isMobile ? (
+      {!isMobileOnly ? (
         <header className={headerClass}>
           <img src='/images/logo.svg' alt='Header logo' />
 
