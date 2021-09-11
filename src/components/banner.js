@@ -7,7 +7,7 @@ const Banner = () => {
   const bannerSectionOverlayId = isMobileOnly ? 'bannerSectionOverlayMobile' : 'bannerSectionOverlayDesktop'
   const heroImageFolder = isMobileOnly ? 'mobile' : isTablet ? 'tablet' : 'desktop'
   return (
-    <>
+    <section>
       <div id={bannerSectionId} style={{ backgroundImage: `url('/images/homepage/${heroImageFolder}/image-homepage-hero.jpg')` }}>
         {!isMobileOnly ? (
           <div id={bannerSectionOverlayId}>
@@ -34,7 +34,7 @@ const Banner = () => {
       ) : (
         <></>
       )}
-    </>
+    </section>
   )
 }
 

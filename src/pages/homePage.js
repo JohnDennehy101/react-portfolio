@@ -1,11 +1,12 @@
 import Banner from '../components/banner'
+import AboutSection from '../components/aboutSection'
 
 const HomePage = (props) => {
   return (
     <>
-      <section>
-        <Banner />
-      </section>
+      <Banner />
+
+      <AboutSection />
     </>
   )
 }

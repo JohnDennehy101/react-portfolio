@@ -9,14 +9,18 @@ import '../src/scss/index.scss'
 
 const App = () => {
   return (
-    <Router>
-      <Header />
-      <Switch>
-        <Route component={HomePage} exact path='/' />
-        <Redirect from='*' to='/' />
-      </Switch>
-      <Footer />
-    </Router>
+    <div id='container'>
+      <Router>
+        <Header />
+        <div id='main-content'>
+          <Switch>
+            <Route component={HomePage} exact path='/' />
+            <Redirect from='*' to='/' />
+          </Switch>
+        </div>
+        <Footer />
+      </Router>
+    </div>
   )
 }
 
