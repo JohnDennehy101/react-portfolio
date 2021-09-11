@@ -1,0 +1,117 @@
+@import './variables';
+
+#bannerSectionDesktop {
+  height: 600px;
+  margin: 65px $desktop-left-right-margin 0 $desktop-left-right-margin;
+  background-repeat: no-repeat;
+  background-size: cover;
+  object-fit: cover;
+}
+
+#bannerSectionTablet {
+  height: 600px;
+  margin: 65px $desktop-left-right-margin 0 $desktop-left-right-margin;
+  background-repeat: no-repeat;
+  background-size: cover;
+  object-fit: cover;
+}
+
+#bannerSectionOverlayDesktop {
+  width: 445px;
+  height: 357px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #000;
+  position: relative;
+  top: 40.5%;
+  background-color: #ffffff;
+  font-family: $ibarra-real-nova-font-family;
+  h1 {
+    padding-top: 56px;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 50px;
+  }
+  button {
+    display: flex;
+    margin-top: 53px;
+    align-items: center;
+    width: 200px;
+    height: 48px;
+    background-color: $primary-button-background-color;
+    color: #ffffff;
+  }
+  img {
+    padding-left: 16px;
+    width: 16px;
+    height: 12px;
+  }
+  span {
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    letter-spacing: 2px;
+    font-weight: 400;
+  }
+}
+
+#bannerSectionTablet {
+  height: 600px;
+  margin: 65px auto 0 auto;
+  width: 90%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  object-fit: cover;
+}
+
+#bannerSectionMobile {
+  height: 311px;
+  margin: 40px $mobile-left-right-margin 24px $mobile-left-right-margin;
+  background-repeat: no-repeat;
+  background-size: cover;
+  object-fit: cover;
+}
+
+#bannerSectionOverlayMobile {
+  height: 271px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #000;
+  background-color: #ffffff;
+  font-family: $ibarra-real-nova-font-family;
+  h1 {
+    margin: 0 $mobile-left-right-margin 0 $mobile-left-right-margin;
+    padding-top: 24px;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 42px;
+  }
+  button {
+    display: flex;
+    margin: 32px $mobile-left-right-margin 0 $mobile-left-right-margin;
+    align-items: center;
+    width: 200px;
+    height: 48px;
+    background-color: $primary-button-background-color;
+    color: #ffffff;
+  }
+  img {
+    padding-left: 16px;
+    width: 16px;
+    height: 12px;
+  }
+  span {
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    letter-spacing: 2px;
+    font-weight: 400;
+    font-size: 12px;
+  }
+}
+
+button:hover {
+  cursor: pointer;
+}

@@ -1,11 +1,8 @@
-$public-sans-font-family: 'Public Sans', sans-serif;
-$desktop-header-active-link-color: #5fb4a2;
-$modal-mobile-background-colour: #33323d;
-$modal-mobile-font-colour: #ffffff;
+@import './variables';
 
 .headerDesktop {
   display: flex;
-  margin: 40px;
+  margin: 40px $desktop-left-right-margin 40px $desktop-left-right-margin;
   justify-content: space-between;
   align-items: center;
 }

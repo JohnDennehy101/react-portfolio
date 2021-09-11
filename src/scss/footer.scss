@@ -1,4 +1,4 @@
-$footer-background-colour: #33323d;
+@import './variables';
 
 #footerDesktop {
   height: 80px;
@@ -14,7 +14,7 @@ $footer-background-colour: #33323d;
     display: flex;
 
     img {
-      margin-left: 40px;
+      margin-left: $desktop-left-right-margin;
     }
     ul {
       margin-left: 48px;
@@ -31,7 +31,7 @@ $footer-background-colour: #33323d;
     }
     ul {
       margin-left: 0;
-      margin-right: 40px;
+      margin-right: $desktop-left-right-margin;
     }
     li {
       margin-left: 16px;
