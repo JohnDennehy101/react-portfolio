@@ -3,7 +3,7 @@ import { isMobileOnly, isTablet } from 'react-device-detect'
 import { useState } from 'react'
 import { NavLink } from 'react-router-dom'
 
-const Header = (props) => {
+const Header = () => {
   const [open, setOpen] = useState(false)
   const headerClass = isMobileOnly ? 'header-mobile' : isTablet ? 'header-tablet' : 'header-desktop'
   const [modalClass, setModalClass] = useState('')
@@ -54,13 +54,13 @@ const Header = (props) => {
           <div id='modalDiv' className={modalClass}>
             <ul>
               <li>
-                <a href='#'>HOME</a>
+                <NavLink to='/'>HOME</NavLink>
               </li>
               <li>
-                <a href='#'>PORTFOLIO</a>
+                <NavLink to='/portfolio'>PORTFOLIO</NavLink>
               </li>
               <li>
-                <a href='#'>CONTACT ME</a>
+                <NavLink to='/contact'>CONTACT ME</NavLink>
               </li>
             </ul>
           </div>
