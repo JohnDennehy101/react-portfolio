@@ -1,0 +1,104 @@
+$footer-background-colour: #33323d;
+
+#footerDesktop {
+  height: 80px;
+  width: 100%;
+  background-color: $footer-background-colour;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  #footerLogoAndLinks {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+
+    img {
+      margin-left: 40px;
+    }
+    ul {
+      margin-left: 48px;
+    }
+  }
+
+  #footerSocialMediaIcons {
+    justify-content: center;
+    display: flex;
+
+    img {
+      width: 24px;
+      height: 24px;
+    }
+    ul {
+      margin-left: 0;
+      margin-right: 40px;
+    }
+    li {
+      margin-left: 16px;
+      margin-right: 0px;
+    }
+  }
+
+  .footerLink {
+    color: #ffffff;
+  }
+}
+
+#footerMobile {
+  height: 354px;
+  width: 100%;
+  background-color: $footer-background-colour;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+
+  #footerLogoAndLinks {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    .footerLink {
+      color: #ffffff;
+    }
+
+    padding: 56px 106px 0px 106px;
+
+    img {
+      margin: 0 0 40px 0;
+    }
+    ul {
+      margin: 0 auto;
+      text-align: center;
+      flex-direction: column;
+      justify-content: center;
+      width: 100%;
+    }
+    li {
+      text-align: center;
+      margin: 0 0 32px 0;
+      font-size: 12px;
+    }
+  }
+
+  #footerSocialMediaIcons {
+    display: flex;
+    justify-content: center;
+    width: 104px;
+    margin: 8px 0 56px 0;
+
+    ul {
+      display: flex;
+
+      margin: 0;
+    }
+    li {
+      margin: 0 16px;
+    }
+    img {
+      width: 24px;
+      height: 24px;
+    }
+  }
+}

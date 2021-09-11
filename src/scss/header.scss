@@ -3,21 +3,20 @@ $desktop-header-active-link-color: #5fb4a2;
 $modal-mobile-background-colour: #33323d;
 $modal-mobile-font-colour: #ffffff;
 
-.header-desktop {
+.headerDesktop {
   display: flex;
-  width: 85%;
-  margin: 40px auto 0 auto;
+  margin: 40px;
   justify-content: space-between;
   align-items: center;
 }
-.header-tablet {
+.headerTablet {
   display: flex;
   width: 90%;
   margin: 40px auto 0 auto;
   justify-content: space-between;
   align-items: center;
 }
-.header-mobile {
+.headerMobile {
   display: flex;
   width: 90vw;
   margin: 32px auto 0 auto;
@@ -28,7 +27,7 @@ img {
   width: 60px;
   height: 32px;
 }
-.hamburger-icon {
+.hamburgerIcon {
   width: 24px;
   height: 13px;
 }
@@ -111,7 +110,7 @@ a {
   }
 }
 
-.modal-slide-in {
+.modalSlideIn {
   animation-duration: 1s;
   animation-name: slidein;
   animation-fill-mode: forwards;
@@ -119,7 +118,7 @@ a {
   top: 88px;
 }
 
-.modal-slide-out {
+.modalSlideOut {
   animation-duration: 1s;
   animation-name: slideout;
   right: -70%;

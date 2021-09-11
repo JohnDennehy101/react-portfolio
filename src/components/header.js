@@ -5,22 +5,22 @@ import { NavLink } from 'react-router-dom'
 
 const Header = () => {
   const [open, setOpen] = useState(false)
-  const headerClass = isMobileOnly ? 'header-mobile' : isTablet ? 'header-tablet' : 'header-desktop'
+  const headerClass = isMobileOnly ? 'headerMobile' : isTablet ? 'headerTablet' : 'headerDesktop'
   const [modalClass, setModalClass] = useState('')
 
   const handleClick = () => {
     setOpen(!open)
     if (open) {
-      setModalClass('modal-slide-out')
+      setModalClass('modalSlideOut')
     } else {
-      setModalClass('modal-slide-in')
+      setModalClass('modalSlideIn')
     }
   }
   return (
     <>
       {!isMobileOnly ? (
         <header className={headerClass}>
-          <img src='/images/logo.svg' alt='Header logo' />
+          <img src='/images/logo_dark.svg' alt='Header logo' />
 
           <ul>
             <li>
@@ -43,12 +43,12 @@ const Header = () => {
       ) : (
         <>
           <header className={headerClass}>
-            <img src='/images/logo.svg' alt='Header logo' />
+            <img src='/images/logo_dark.svg' alt='Header logo' />
 
             {!open ? (
-              <img src='/images/icons/hamburger.svg' className='hamburger-icon' alt='Hamburger logo' onClick={handleClick} />
+              <img src='/images/icons/hamburger.svg' className='hamburgerIcon' alt='Hamburger logo' onClick={handleClick} />
             ) : (
-              <img src='/images/icons/close.svg' className='hamburger-icon' alt='Close icon logo' onClick={handleClick} />
+              <img src='/images/icons/close.svg' className='hamburgerIcon' alt='Close icon logo' onClick={handleClick} />
             )}
           </header>
           <div id='modalDiv' className={modalClass}>
