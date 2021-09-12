@@ -14,7 +14,7 @@ const Banner = () => {
             <h1>Hey, I'm John Dennehy, a full-stack software developer.</h1>
             <Link to='/dashboard'>
               <button type='button'>
-                <img src='/images/icons/down-arrows.svg' /> <span>ABOUT ME</span>
+                <img src='/images/icons/down-arrows.svg' alt='Down arrows icon' /> <span>ABOUT ME</span>
               </button>
             </Link>
           </div>
@@ -27,7 +27,7 @@ const Banner = () => {
           <h1>Hey, I'm John Dennehy, a full-stack software developer.</h1>
           <Link to='/dashboard'>
             <button type='button'>
-              <img src='/images/icons/down-arrows.svg' /> <span>ABOUT ME</span>
+              <img src='/images/icons/down-arrows.svg' alt='Banner hero shot of computer monitor' /> <span>ABOUT ME</span>
             </button>
           </Link>
         </div>

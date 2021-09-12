@@ -13,11 +13,11 @@
   #aboutInfoContainer {
     display: flex;
     flex-direction: column;
-    width: 60%;
+    width: 65%;
+    height: 600px;
     margin: 0 auto;
     border-top: 1px solid rgba(51, 50, 61, 0.15);
     border-bottom: 1px solid rgba(51, 50, 61, 0.15);
-    padding-bottom: 50px;
     margin-bottom: 115px;
   }
   h2 {
@@ -42,6 +42,9 @@
     border: 1px solid #33323d;
     background-color: #ffffff;
   }
+  a {
+    padding-bottom: 46px;
+  }
 }
 
 #aboutSectionTablet {
@@ -49,29 +52,27 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
   width: 90%;
-  margin: 0 auto;
+  margin: 96px auto 0 auto;
 
   img {
     width: 281px;
     height: 600px;
-    margin-top: 96px;
   }
   #aboutInfoContainer {
     display: flex;
     flex-direction: column;
-    width: 90%;
+    width: 97%;
+    height: 600px;
     margin: 0 auto;
     border-top: 1px solid rgba(51, 50, 61, 0.15);
     border-bottom: 1px solid rgba(51, 50, 61, 0.15);
-    padding-bottom: 50px;
-    margin-bottom: 115px;
   }
   h2 {
     font-family: $ibarra-real-nova-font-family;
     font-weight: 700;
     font-size: 40px;
     line-height: 42px;
-    padding-top: 96px;
+    padding-top: 50px;
   }
   p {
     padding-top: 28px;
@@ -87,6 +88,9 @@
     color: #33323d;
     border: 1px solid #33323d;
     background-color: #ffffff;
+  }
+  a {
+    padding-bottom: 46px;
   }
 }
 

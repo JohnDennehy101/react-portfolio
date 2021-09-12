@@ -104,3 +104,48 @@
     }
   }
 }
+
+#footerTablet {
+  height: 80px;
+  width: 100%;
+  background-color: $footer-background-colour;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 150px auto 0 auto;
+
+  #footerLogoAndLinks {
+    align-items: center;
+    display: flex;
+    width: 100%;
+    padding-left: 5%;
+    ul {
+      margin-left: 48px;
+    }
+    li {
+      margin-left: 42px;
+    }
+  }
+
+  #footerSocialMediaIcons {
+    justify-content: center;
+    display: flex;
+    padding-right: 5%;
+
+    img {
+      width: 24px;
+      height: 24px;
+    }
+    ul {
+      margin-left: 0;
+    }
+    li {
+      margin-left: 16px;
+      margin-right: 0px;
+    }
+  }
+
+  .footerLink {
+    color: #ffffff;
+  }
+}

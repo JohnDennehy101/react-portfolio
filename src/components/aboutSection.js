@@ -14,7 +14,7 @@ const AboutSection = () => {
     <section className={aboutSectionClassName}>
       <div id={aboutSectionId}>
         {/* <div> */}
-        <img src={`/images/homepage/${imageFolder}/image-homepage-profile.jpg`} className={imageClass} />
+        <img src={`/images/homepage/${imageFolder}/image-homepage-profile.jpg`} className={imageClass} alt='Profile Headshot' />
 
         {/* </div> */}
         <div id='aboutInfoContainer'>
