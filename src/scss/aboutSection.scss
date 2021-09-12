@@ -1,8 +1,38 @@
 @import './variables';
 
-#aboutSectionDesktop {
+.aboutSection {
   height: 600px;
   display: grid;
+}
+.aboutSectionTitle {
+  font-family: $ibarra-real-nova-font-family;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 42px;
+}
+.aboutSectionContent {
+  font-family: $public-sans-font-family;
+  font-size: 16px;
+  line-height: 30px;
+  color: #33323d;
+  padding-top: 28px;
+}
+.aboutInfoContainerDiv {
+  border-top: 1px solid rgba(51, 50, 61, 0.15);
+  border-bottom: 1px solid rgba(51, 50, 61, 0.15);
+  display: flex;
+  flex-direction: column;
+}
+.secondaryButton {
+  margin-top: 24px;
+  width: 202px;
+  height: 48px;
+  color: #33323d;
+  border: 1px solid #33323d;
+  background-color: #ffffff;
+}
+
+#aboutSectionDesktop {
   grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));
   margin: 150px $desktop-left-right-margin 0 $desktop-left-right-margin;
 
@@ -11,45 +41,21 @@
     height: 600px;
   }
   #aboutInfoContainer {
-    display: flex;
-    flex-direction: column;
     width: 65%;
     height: 600px;
     margin: 0 auto;
-    border-top: 1px solid rgba(51, 50, 61, 0.15);
-    border-bottom: 1px solid rgba(51, 50, 61, 0.15);
     margin-bottom: 115px;
   }
   h2 {
-    font-family: $ibarra-real-nova-font-family;
-    font-weight: 700;
-    font-size: 40px;
-    line-height: 42px;
     padding-top: 50px;
   }
-  p {
-    padding-top: 28px;
-    font-family: $public-sans-font-family;
-    font-size: 16px;
-    line-height: 30px;
-    color: #33323d;
-  }
-  button {
-    margin-top: 24px;
-    width: 202px;
-    height: 48px;
-    color: #33323d;
-    border: 1px solid #33323d;
-    background-color: #ffffff;
-  }
+
   a {
     padding-bottom: 46px;
   }
 }
 
 #aboutSectionTablet {
-  height: 600px;
-  display: grid;
   grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
   width: 90%;
   margin: 96px auto 0 auto;
@@ -59,36 +65,13 @@
     height: 600px;
   }
   #aboutInfoContainer {
-    display: flex;
-    flex-direction: column;
-    width: 97%;
     height: 600px;
     margin: 0 auto;
-    border-top: 1px solid rgba(51, 50, 61, 0.15);
-    border-bottom: 1px solid rgba(51, 50, 61, 0.15);
   }
   h2 {
-    font-family: $ibarra-real-nova-font-family;
-    font-weight: 700;
-    font-size: 40px;
-    line-height: 42px;
     padding-top: 50px;
   }
-  p {
-    padding-top: 28px;
-    font-family: $public-sans-font-family;
-    font-size: 16px;
-    line-height: 30px;
-    color: #33323d;
-  }
-  button {
-    margin-top: 24px;
-    width: 202px;
-    height: 48px;
-    color: #33323d;
-    border: 1px solid #33323d;
-    background-color: #ffffff;
-  }
+
   a {
     padding-bottom: 46px;
   }
@@ -99,8 +82,6 @@
 }
 
 #aboutSectionMobile {
-  height: 600px;
-  display: grid;
   object-fit: cover;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   margin: 96px $mobile-left-right-margin 0 $mobile-left-right-margin;
@@ -116,35 +97,13 @@
     width: 100%;
   }
   #aboutInfoContainer {
-    display: flex;
-    flex-direction: column;
-
-    border-top: 1px solid rgba(51, 50, 61, 0.15);
-    border-bottom: 1px solid rgba(51, 50, 61, 0.15);
     padding-bottom: 50px;
     margin-bottom: 115px;
   }
   h2 {
-    font-family: $ibarra-real-nova-font-family;
-    font-weight: 700;
-    font-size: 40px;
-    line-height: 42px;
     margin-top: 32px;
   }
   p {
-    padding-top: 28px;
     width: 94%;
-    font-family: $public-sans-font-family;
-    font-size: 16px;
-    line-height: 30px;
-    color: #33323d;
-  }
-  button {
-    margin-top: 24px;
-    width: 202px;
-    height: 48px;
-    color: #33323d;
-    border: 1px solid #33323d;
-    background-color: #ffffff;
   }
 }

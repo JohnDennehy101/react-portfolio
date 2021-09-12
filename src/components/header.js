@@ -19,7 +19,7 @@ const Header = () => {
   return (
     <>
       {!isMobileOnly ? (
-        <header className={headerClass}>
+        <header className={headerClass} id='header'>
           <img src='/images/logo_dark.svg' alt='Header logo' />
 
           <ul>
@@ -42,7 +42,7 @@ const Header = () => {
         </header>
       ) : (
         <>
-          <header className={headerClass}>
+          <header className={headerClass} id='header'>
             <img src='/images/logo_dark.svg' alt='Header logo' />
 
             {!open ? (

@@ -12,14 +12,14 @@ const AboutSection = () => {
   const imageFolder = isMobileOnly ? 'mobile' : isTablet ? 'tablet' : 'desktop'
   return (
     <section className={aboutSectionClassName}>
-      <div id={aboutSectionId}>
+      <div id={aboutSectionId} className='aboutSection'>
         {/* <div> */}
         <img src={`/images/homepage/${imageFolder}/image-homepage-profile.jpg`} className={imageClass} alt='Profile Headshot' />
 
         {/* </div> */}
-        <div id='aboutInfoContainer'>
-          <h2>About Me</h2>
-          <p>
+        <div id='aboutInfoContainer' className='aboutInfoContainerDiv'>
+          <h2 className='aboutSectionTitle'>About Me</h2>
+          <p className='aboutSectionContent'>
             I’m a junior front-end developer looking for a new role in an exciting company. I focus on writing accessible HTML, using modern
             CSS practices and writing clean JavaScript. When writing JavaScript code, I mostly use React, but I can adapt to whatever tools
             are required. I’m based in London, UK, but I’m happy working remotely and have experience in remote teams. When I’m not coding,
@@ -27,7 +27,9 @@ const AboutSection = () => {
             my work.
           </p>
           <Link to='/dashboard'>
-            <button type='button'>GO TO PORTFOLIO</button>
+            <button type='button' className='secondaryButton'>
+              GO TO PORTFOLIO
+            </button>
           </Link>
         </div>
       </div>

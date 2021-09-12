@@ -1,24 +1,21 @@
 @import './variables';
 
-.headerDesktop {
+#header {
   display: flex;
-  margin: 40px $desktop-left-right-margin 40px $desktop-left-right-margin;
   justify-content: space-between;
   align-items: center;
+}
+
+.headerDesktop {
+  margin: 40px $desktop-left-right-margin 40px $desktop-left-right-margin;
 }
 .headerTablet {
-  display: flex;
   width: 90%;
   margin: 40px auto 0 auto;
-  justify-content: space-between;
-  align-items: center;
 }
 .headerMobile {
-  display: flex;
   width: 90vw;
   margin: 32px auto 0 auto;
-  justify-content: space-between;
-  align-items: center;
 }
 img {
   width: 60px;
@@ -55,13 +52,7 @@ a {
   right: -70%;
   z-index: 1;
   background-color: $modal-mobile-background-colour;
-}
 
-.active {
-  color: $desktop-header-active-link-color;
-}
-
-#modalDiv {
   ul {
     height: 60%;
     display: flex;
@@ -83,6 +74,10 @@ a {
   a {
     color: $modal-mobile-font-colour;
   }
+}
+
+.active {
+  color: $desktop-header-active-link-color;
 }
 
 @keyframes slidein {

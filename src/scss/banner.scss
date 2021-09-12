@@ -1,41 +1,66 @@
 @import './variables';
 
-#bannerSectionDesktop {
-  height: 600px;
-  margin: 65px $desktop-left-right-margin 0 $desktop-left-right-margin;
+.bannerSectionDiv {
   background-repeat: no-repeat;
   background-size: cover;
   object-fit: cover;
 }
 
+.bannerSectionOverlayDiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #ffffff;
+  font-family: $ibarra-real-nova-font-family;
+}
+.bannerSectionTitle {
+  font-weight: 700;
+}
+
+#bannerSectionDesktop {
+  height: 600px;
+  margin: 65px $desktop-left-right-margin 0 $desktop-left-right-margin;
+}
+
 #bannerSectionTablet {
   height: 600px;
   margin: 65px $desktop-left-right-margin 0 $desktop-left-right-margin;
+}
+
+#bannerSectionMobile {
+  height: 311px;
+  margin: 40px $mobile-left-right-margin 24px $mobile-left-right-margin;
+}
+
+#dropdownButtonDiv {
+  width: 48px;
+  height: 48px;
+  background-color: rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-position: center;
   object-fit: cover;
 }
 
 #bannerSectionOverlayDesktop {
   width: 445px;
   height: 357px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  background-color: #000;
   position: relative;
   top: 40.5%;
-  background-color: #ffffff;
-  font-family: $ibarra-real-nova-font-family;
   h1 {
     padding-top: 56px;
-    font-weight: 700;
     font-size: 50px;
     line-height: 50px;
   }
+  a {
+    position: absolute;
+    bottom: 0;
+  }
   button {
     display: flex;
-    margin-top: 53px;
+
     align-items: center;
     width: 200px;
     height: 48px;
@@ -46,6 +71,7 @@
     padding-left: 16px;
     width: 16px;
     height: 12px;
+    z-index: 100;
   }
   span {
     display: block;
@@ -56,41 +82,23 @@
   }
 }
 
-#bannerSectionTablet {
-  height: 600px;
-  margin: 65px auto 0 auto;
-  width: 90%;
-  background-repeat: no-repeat;
-  background-size: cover;
-  object-fit: cover;
-}
-
-#bannerSectionMobile {
-  height: 311px;
-  margin: 40px $mobile-left-right-margin 24px $mobile-left-right-margin;
-  background-repeat: no-repeat;
-  background-size: cover;
-  object-fit: cover;
-}
-
 #bannerSectionOverlayMobile {
   height: 271px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  background-color: #000;
-  background-color: #ffffff;
-  font-family: $ibarra-real-nova-font-family;
   h1 {
     margin: 0 $mobile-left-right-margin 0 $mobile-left-right-margin;
     padding-top: 24px;
-    font-weight: 700;
     font-size: 40px;
     line-height: 42px;
   }
+  a {
+    position: relative;
+    bottom: 0;
+    width: 200px;
+    left: 13;
+  }
   button {
     display: flex;
-    margin: 32px $mobile-left-right-margin 0 $mobile-left-right-margin;
+    margin: 0 $mobile-left-right-margin;
     align-items: center;
     width: 200px;
     height: 48px;

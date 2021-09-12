@@ -5,8 +5,8 @@ import { NavLink } from 'react-router-dom'
 const Footer = () => {
   const footerId = isMobileOnly ? 'footerMobile' : isTablet ? 'footerTablet' : 'footerDesktop'
   return (
-    <footer id={footerId}>
-      <div id='footerLogoAndLinks'>
+    <footer id={footerId} className='footer'>
+      <div id='footerLogoAndLinks' className='footerLogoAndLinksDiv'>
         <img src='/images/logo_bright.svg' alt='Footer logo' />
         <ul>
           <li>
@@ -26,7 +26,7 @@ const Footer = () => {
           </li>
         </ul>
       </div>
-      <div id='footerSocialMediaIcons'>
+      <div id='footerSocialMediaIcons' className='footerSocialMediaIconsDiv'>
         <ul>
           <li>
             <a href='https://github.com/JohnDennehy101' target='_blank' rel='noreferrer'>

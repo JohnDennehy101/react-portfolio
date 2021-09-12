@@ -1,18 +1,29 @@
 @import './variables';
 
-#footerDesktop {
-  height: 80px;
+.footer {
   width: 100%;
   background-color: $footer-background-colour;
   display: flex;
   align-items: center;
+}
+
+.footerLogoAndLinksDiv {
+  align-items: center;
+  display: flex;
+}
+
+.footerSocialMediaIconsDiv {
+  justify-content: center;
+  display: flex;
+}
+
+#footerDesktop {
+  height: 80px;
   justify-content: space-between;
   margin-top: 150px;
 
   #footerLogoAndLinks {
     justify-content: center;
-    align-items: center;
-    display: flex;
 
     img {
       margin-left: $desktop-left-right-margin;
@@ -23,9 +34,6 @@
   }
 
   #footerSocialMediaIcons {
-    justify-content: center;
-    display: flex;
-
     img {
       width: 24px;
       height: 24px;
@@ -47,18 +55,12 @@
 
 #footerMobile {
   height: 354px;
-  width: 100%;
-  background-color: $footer-background-colour;
-  display: flex;
-  align-items: center;
   justify-content: space-between;
   flex-direction: column;
   margin-top: 80px;
 
   #footerLogoAndLinks {
     justify-content: center;
-    align-items: center;
-    display: flex;
     flex-direction: column;
     width: 80%;
     .footerLink {
@@ -85,8 +87,6 @@
   }
 
   #footerSocialMediaIcons {
-    display: flex;
-    justify-content: center;
     width: 104px;
     margin: 8px 0 56px 0;
 
@@ -107,16 +107,10 @@
 
 #footerTablet {
   height: 80px;
-  width: 100%;
-  background-color: $footer-background-colour;
-  display: flex;
-  align-items: center;
   justify-content: space-between;
   margin: 150px auto 0 auto;
 
   #footerLogoAndLinks {
-    align-items: center;
-    display: flex;
     width: 100%;
     padding-left: 5%;
     ul {
@@ -128,8 +122,6 @@
   }
 
   #footerSocialMediaIcons {
-    justify-content: center;
-    display: flex;
     padding-right: 5%;
 
     img {

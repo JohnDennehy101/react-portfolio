@@ -8,13 +8,20 @@ const Banner = () => {
   const heroImageFolder = isMobileOnly ? 'mobile' : isTablet ? 'tablet' : 'desktop'
   return (
     <section>
-      <div id={bannerSectionId} style={{ backgroundImage: `url('/images/homepage/${heroImageFolder}/image-homepage-hero.jpg')` }}>
+      <div
+        id={bannerSectionId}
+        className='bannerSectionDiv'
+        style={{ backgroundImage: `url('/images/homepage/${heroImageFolder}/image-homepage-hero.jpg')` }}
+      >
         {!isMobileOnly ? (
-          <div id={bannerSectionOverlayId}>
-            <h1>Hey, I'm John Dennehy, a full-stack software developer.</h1>
+          <div id={bannerSectionOverlayId} className='bannerSectionOverlayDiv'>
+            <h1 className='bannerSectionTitle'>Hey, I'm John Dennehy, a full-stack software developer.</h1>
             <Link to='/dashboard'>
               <button type='button'>
-                <img src='/images/icons/down-arrows.svg' alt='Down arrows icon' /> <span>ABOUT ME</span>
+                <div id='dropdownButtonDiv' style={{ backgroundImage: 'url(/images/icons/down-arrows.svg)' }}>
+                  <img src='/images/icons/down-arrows.svg' alt='Down arrows icon' />
+                </div>
+                <span>ABOUT ME</span>
               </button>
             </Link>
           </div>
@@ -23,11 +30,14 @@ const Banner = () => {
         )}
       </div>
       {isMobileOnly ? (
-        <div id={bannerSectionOverlayId}>
+        <div id={bannerSectionOverlayId} className='bannerSectionOverlayDiv'>
           <h1>Hey, I'm John Dennehy, a full-stack software developer.</h1>
           <Link to='/dashboard'>
             <button type='button'>
-              <img src='/images/icons/down-arrows.svg' alt='Banner hero shot of computer monitor' /> <span>ABOUT ME</span>
+              <div id='dropdownButtonDiv' style={{ backgroundImage: 'url(/images/icons/down-arrows.svg)' }}>
+                <img src='/images/icons/down-arrows.svg' alt='Banner hero shot of computer monitor' />
+              </div>{' '}
+              <span>ABOUT ME</span>
             </button>
           </Link>
         </div>
