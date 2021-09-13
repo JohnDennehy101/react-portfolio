@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom'
 import reportWebVitals from './reportWebVitals'
 import { BrowserRouter as Router, Switch, Route, Redirect } from 'react-router-dom'
 import HomePage from './pages/homePage'
+import PortfolioPage from './pages/portfolioPage'
 import Header from './components/header'
 import Footer from './components/footer'
 import '../src/scss/index.scss'
@@ -15,6 +16,7 @@ const App = () => {
         <div id='main-content'>
           <Switch>
             <Route component={HomePage} exact path='/' />
+            <Route component={PortfolioPage} exact path='/portfolio' />
             <Redirect from='*' to='/' />
           </Switch>
         </div>
