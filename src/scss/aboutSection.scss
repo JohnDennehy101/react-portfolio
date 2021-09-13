@@ -16,6 +16,7 @@
   line-height: 30px;
   color: #33323d;
   padding-top: 28px;
+  padding-bottom: 24px;
 }
 .aboutInfoContainerDiv {
   border-top: 1px solid rgba(51, 50, 61, 0.15);
@@ -24,7 +25,6 @@
   flex-direction: column;
 }
 .secondaryButton {
-  margin-top: 24px;
   width: 202px;
   height: 48px;
   color: #33323d;
@@ -51,7 +51,7 @@
   }
 
   a {
-    padding-bottom: 46px;
+    width: 202px;
   }
 }
 
@@ -73,7 +73,7 @@
   }
 
   a {
-    padding-bottom: 46px;
+    width: 202px;
   }
 }
 
@@ -105,5 +105,8 @@
   }
   p {
     width: 94%;
+  }
+  a {
+    width: 202px;
   }
 }
