@@ -54,13 +54,19 @@ const Header = () => {
           <div id='modalDiv' className={modalClass}>
             <ul>
               <li>
-                <NavLink onClick={handleClick} to='/'>HOME</NavLink>
+                <NavLink onClick={handleClick} to='/'>
+                  HOME
+                </NavLink>
               </li>
               <li>
-                <NavLink onClick={handleClick} to='/portfolio'>PORTFOLIO</NavLink>
+                <NavLink onClick={handleClick} to='/portfolio'>
+                  PORTFOLIO
+                </NavLink>
               </li>
               <li>
-                <NavLink onClick={handleClick} to='/contact'>CONTACT ME</NavLink>
+                <NavLink onClick={handleClick} to='/contact'>
+                  CONTACT ME
+                </NavLink>
               </li>
             </ul>
           </div>

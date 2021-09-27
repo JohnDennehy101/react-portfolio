@@ -4,6 +4,7 @@ import reportWebVitals from './reportWebVitals'
 import { BrowserRouter as Router, Switch, Route, Redirect } from 'react-router-dom'
 import HomePage from './pages/homePage'
 import PortfolioPage from './pages/portfolioPage'
+import PortfolioProjectDetailPage from './pages/portfolioProjectDetailPage'
 import Header from './components/header'
 import Footer from './components/footer'
 import '../src/scss/index.scss'
@@ -17,6 +18,7 @@ const App = () => {
           <Switch>
             <Route component={HomePage} exact path='/' />
             <Route component={PortfolioPage} exact path='/portfolio' />
+            <Route component={PortfolioProjectDetailPage} path='/portfolio/:id' />
             <Redirect from='*' to='/' />
           </Switch>
         </div>

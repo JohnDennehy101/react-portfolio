@@ -1,0 +1,97 @@
+@import './variables';
+
+#projectDetailDesktopInfoContainer {
+  display: grid;
+  grid-template-columns: 40% 60%;
+  margin: 115px 0 64px 0;
+  height: 1192px;
+}
+
+#individualProjectTextContainer {
+  border-top: 1px solid rgba(51, 50, 61, 0.15);
+  border-bottom: 1px solid rgba(51, 50, 61, 0.15);
+  display: flex;
+  flex-direction: column;
+  margin: 0 125px 48px 0;
+  padding: 48px 0;
+}
+
+article {
+  display: flex;
+  flex-direction: column;
+
+  img {
+    width: 100%;
+    height: 400px;
+    padding-top: 28px;
+  }
+  h3 {
+    font-size: 32px;
+    font-family: $ibarra-real-nova-font-family;
+    font-weight: 400;
+  }
+  p {
+    margin-top: 28px;
+    margin-bottom: 40px;
+    font-family: $public-sans-font-family;
+    font-size: 15px;
+    color: #33323d;
+    line-height: 30px;
+    opacity: 0.8;
+  }
+}
+
+#projectNavigator {
+  margin: 64px 0 115px 0;
+  width: 100%;
+  height: 132px;
+  display: flex;
+  justify-content: space-between;
+
+  align-items: center;
+  border-top: 1px solid rgba(50, 51, 61, 0.15);
+  border-bottom: 1px solid rgba(50, 51, 61, 0.15);
+
+  .projectNavigatorOption {
+    display: inline-block;
+    align-items: center;
+  }
+  div.projectNavigatorOptionContainer:nth-of-type(1) {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+  }
+  div.projectNavigatorOptionContainer:nth-of-type(2) {
+    border-left: 1px solid rgba(50, 51, 61, 0.15);
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    cursor: pointer;
+    align-items: center;
+  }
+  div {
+    display: inline-block;
+  }
+  img {
+    width: 8px;
+    height: 16px;
+  }
+  h3 {
+    margin: 0 32px;
+    font-family: $ibarra-real-nova-font-family;
+    color: #33323d;
+    font-size: 32px;
+    font-weight: 400;
+  }
+  p {
+    margin: 0 32px;
+    font-family: $public-sans-font-family;
+    font-size: 16px;
+    line-height: 30px;
+    color: #33323d;
+    opacity: 0.5;
+  }
+}

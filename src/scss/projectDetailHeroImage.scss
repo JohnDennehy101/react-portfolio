@@ -1,0 +1,16 @@
+@import './variables';
+
+#projectDetailDesktopContainer {
+  margin: 94px $desktop-left-right-margin 115px $desktop-left-right-margin;
+}
+#projectDetailHeroImageDesktopContainer {
+  margin-bottom: 115px;
+  img {
+    width: 100%;
+    height: 500px;
+  }
+}
+#projectDetailDesktopInfoContainer {
+  width: 100%;
+  height: 1192px;
+}
