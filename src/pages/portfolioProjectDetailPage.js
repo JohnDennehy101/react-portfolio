@@ -30,7 +30,12 @@ const PortfolioProjectDetailPage = () => {
 
       <div id='projectDetailDesktopInfoContainer'>
         <div id='sidebar'>
-          <IndividualProjectOverview title={project.title} overview={project.overview} />
+          <IndividualProjectOverview
+            title={project.title}
+            overview={project.overview}
+            projectCategories={project.categories}
+            projectTechnologies={project.technologies}
+          />
         </div>
         <div id='main'>
           <article>
