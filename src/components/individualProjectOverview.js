@@ -1,5 +1,5 @@
 import '../scss/individualProjectOverview.scss'
-import { isMobileOnly, isTablet } from 'react-device-detect'
+import { isMobileOnly, isTabletOnly } from 'react-device-detect'
 import { Link } from 'react-router-dom'
 
 const IndividualProjectOverview = ({ title, overview, index, projectCategories, projectTechnologies }) => {
@@ -37,7 +37,7 @@ const IndividualProjectOverview = ({ title, overview, index, projectCategories, 
         <div>
             <img src={`/images/portfolio/${imageFolder}/project_${index + 1}.png`} alt='project screenshot' />
         </div> */}
-      {!isTablet ? <div id={projectTextContainerId}>
+      {!isTabletOnly || !isMobileOnly ? <div id={projectTextContainerId}>
         <h2 className='individualProjectTitle'>{title}</h2>
         <p className='individualProjectOverview'>{overview}</p>
         <p className='individualProjectTags'> {projectCategoriesString} </p>

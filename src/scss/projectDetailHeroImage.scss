@@ -6,6 +6,10 @@
   @include for-tablet-only {
     margin: 94px 39px 80px 39px;
   }
+
+  @include for-phone-only {
+    margin: 40px $mobile-left-right-margin 0 $mobile-left-right-margin;
+  }
 }
 #projectDetailHeroImageContainer {
   margin-bottom: 115px;
@@ -20,6 +24,13 @@
     img {
       width: 100%;
       height: 310px;
+    }
+  }
+
+  @include for-phone-only {
+    margin-bottom: 40px;
+    img {
+      height: 140px;
     }
   }
 }
