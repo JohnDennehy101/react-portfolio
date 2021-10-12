@@ -7,6 +7,8 @@ import '../scss/projectDetailsPage.scss'
 // import '../scss/individualProjectOverview.scss'
 import { Link } from 'react-router-dom'
 import { isMobileOnly } from 'react-device-detect'
+import DesktopNextNavigator from '../components/desktopNextNavigator'
+import MobileNextNavigator from '../components/mobileNextNavigator'
 
 const PortfolioProjectDetailPage = () => {
   const { id } = useParams()
@@ -47,8 +49,8 @@ const PortfolioProjectDetailPage = () => {
             </article>
             <article>
               <h3>Static Previews</h3>
-              <img src='/images/detail/desktop/image-bookmark-preview-1.jpg' alt="first screenshot preview of project" />
-              <img src='/images/detail/desktop/image-bookmark-preview-2.jpg' alt="second screenshot preview of project" />
+              <img src='/images/detail/desktop/image-bookmark-preview-1.jpg' alt='first screenshot preview of project' />
+              <img src='/images/detail/desktop/image-bookmark-preview-2.jpg' alt='second screenshot preview of project' />
             </article>
           </div>
         </div>
@@ -57,7 +59,7 @@ const PortfolioProjectDetailPage = () => {
           <div className='projectNavigatorOptionContainer'>
             <Link to={`/portfolio/${previousProjectIndex}`}>
               <div className='arrowContainer'>
-                <img src='/images/icons/arrow-left.svg' alt="left arrow" />
+                <img src='/images/icons/arrow-left.svg' alt='left arrow' />
               </div>
               <div className='projectNavigatorOption'>
                 <h3>{ProjectsData[previousProjectIndex].title}</h3>
@@ -65,28 +67,11 @@ const PortfolioProjectDetailPage = () => {
               </div>
             </Link>
           </div>
-          { !isMobileOnly ?
-          <div className='projectNavigatorOptionContainer'>
-            <Link to={`/portfolio/${nextProjectIndex}`}>
-              <div className='projectNavigatorOption'>
-                <h3>{ProjectsData[nextProjectIndex].title}</h3>
-                <p>Next Project</p>
-              </div>
-              <div className='arrowContainer'>
-                <img src='/images/icons/arrow-right.svg' alt="right arrow" />
-              </div>
-            </Link>
-          </div>  :  <div className='projectNavigatorOptionContainer'>
-            <Link to={`/portfolio/${nextProjectIndex}`}>
-               <div className='arrowContainer'>
-                <img src='/images/icons/arrow-right.svg' alt="right arrow" />
-              </div>
-              <div className='projectNavigatorOption'>
-                <h3>{ProjectsData[nextProjectIndex].title}</h3>
-                <p>Next Project</p>
-              </div>
-            </Link>
-          </div>}
+          {!isMobileOnly ? (
+            <DesktopNextNavigator nextProjectIndex={nextProjectIndex} nextProjectTitle={ProjectsData[nextProjectIndex].title} />
+          ) : (
+            <MobileNextNavigator nextProjectIndex={nextProjectIndex} nextProjectTitle={ProjectsData[nextProjectIndex].title} />
+          )}
         </div>
       </div>
       <ContactMeCallToAction />
