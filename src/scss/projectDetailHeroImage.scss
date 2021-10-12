@@ -1,20 +1,33 @@
 @import './variables';
 
-#projectDetailDesktopContainer {
+#projectDetailContainer {
   margin: 94px $desktop-left-right-margin 115px $desktop-left-right-margin;
 
   @include for-tablet-only {
     margin: 94px 39px 80px 39px;
   }
 }
-#projectDetailHeroImageDesktopContainer {
+#projectDetailHeroImageContainer {
   margin-bottom: 115px;
   img {
     width: 100%;
     height: 500px;
   }
+
+  @include for-tablet-only {
+    margin-bottom: 40px;
+
+    img {
+      width: 100%;
+      height: 310px;
+    }
+  }
 }
-#projectDetailDesktopInfoContainer {
+#projectDetailInfoContainer {
   width: 100%;
   height: 1192px;
+
+  @include for-tablet-only {
+    height: 2049px;
+  }
 }

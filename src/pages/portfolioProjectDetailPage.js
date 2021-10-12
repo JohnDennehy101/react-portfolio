@@ -27,10 +27,10 @@ const PortfolioProjectDetailPage = () => {
 
   return (
     <>
-      <div id={'projectDetailDesktopContainer'}>
+      <div id={'projectDetailContainer'}>
         <ProjectDetailHeroImage />
 
-        <div id='projectDetailDesktopInfoContainer'>
+        <div id='projectDetailInfoContainer'>
           <div id='sidebar'>
             <IndividualProjectOverview
               title={project.title}

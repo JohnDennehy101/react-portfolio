@@ -1,5 +1,5 @@
 import '../scss/individualProjectOverview.scss'
-// import { isMobileOnly, isTablet } from 'react-device-detect'
+import { isMobileOnly, isTablet } from 'react-device-detect'
 import { Link } from 'react-router-dom'
 
 const IndividualProjectOverview = ({ title, overview, index, projectCategories, projectTechnologies }) => {
@@ -37,7 +37,7 @@ const IndividualProjectOverview = ({ title, overview, index, projectCategories, 
         <div>
             <img src={`/images/portfolio/${imageFolder}/project_${index + 1}.png`} alt='project screenshot' />
         </div> */}
-      <div id={projectTextContainerId}>
+      {!isTablet ? <div id={projectTextContainerId}>
         <h2 className='individualProjectTitle'>{title}</h2>
         <p className='individualProjectOverview'>{overview}</p>
         <p className='individualProjectTags'> {projectCategoriesString} </p>
@@ -51,7 +51,25 @@ const IndividualProjectOverview = ({ title, overview, index, projectCategories, 
             VIEW PROJECT
           </button>
         </Link>
-      </div>
+      </div> :  <div id={projectTextContainerId}>
+        <h2 className='individualProjectTitle'>{title}</h2>
+        <p className='individualProjectTags'> {projectCategoriesString} </p>
+        <p className='individualProjectTags' id='projectTagsText'>
+          {' '}
+          {projectTechnologiesString}{' '}
+        </p>
+
+        <Link to={`/portfolio/${index}`}>
+          <button type='button' className='secondaryButton'>
+            VIEW PROJECT
+          </button>
+        </Link>
+        
+      </div>}
+      <div id={'projectOverviewNonDesktop'}>
+        <p className='individualProjectOverview'>{overview}</p>
+        </div>
+      
       {/* </section> */}
     </>
   )

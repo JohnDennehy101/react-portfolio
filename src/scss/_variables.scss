@@ -15,7 +15,7 @@ $project-tag-font-color: #5fb4a2;
   }
 }
 @mixin for-tablet-only {
-  @media (min-width: 481px) and (max-width: 992px) {
+  @media (min-width: 541px) and (max-width: 992px) {
     @content;
   }
 }
