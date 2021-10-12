@@ -8,3 +8,19 @@ $footer-background-colour: #33323d;
 $desktop-left-right-margin: 165px;
 $mobile-left-right-margin: 13px;
 $project-tag-font-color: #5fb4a2;
+
+@mixin for-phone-only {
+  @media (max-width: 480px) {
+    @content;
+  }
+}
+@mixin for-tablet-only {
+  @media (min-width: 481px) and (max-width: 992px) {
+    @content;
+  }
+}
+@mixin for-desktop-only {
+  @media (min-width: 993px) {
+    @content;
+  }
+}

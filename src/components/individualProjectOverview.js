@@ -5,6 +5,8 @@ import { Link } from 'react-router-dom'
 const IndividualProjectOverview = ({ title, overview, index, projectCategories, projectTechnologies }) => {
   let projectCategoriesString = ''
   let projectTechnologiesString = ''
+  let projectTextContainerId = 'individualProjectTextContainer'
+
   if (projectCategories != null) {
     for (let categoryIndex in projectCategories) {
       if (Number(categoryIndex) !== projectCategories.length - 1) {
@@ -35,7 +37,7 @@ const IndividualProjectOverview = ({ title, overview, index, projectCategories, 
         <div>
             <img src={`/images/portfolio/${imageFolder}/project_${index + 1}.png`} alt='project screenshot' />
         </div> */}
-      <div id='individualProjectTextContainer'>
+      <div id={projectTextContainerId}>
         <h2 className='individualProjectTitle'>{title}</h2>
         <p className='individualProjectOverview'>{overview}</p>
         <p className='individualProjectTags'> {projectCategoriesString} </p>

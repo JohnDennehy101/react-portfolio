@@ -45,18 +45,22 @@
     width: 540px;
     height: 100%;
   }
-  h2 {
-    padding-top: 103px;
+  a {
+    width: 202px;
   }
   #individualProjectTextContainer {
     border-top: 1px solid rgba(51, 50, 61, 0.15);
     border-bottom: 1px solid rgba(51, 50, 61, 0.15);
     display: flex;
+    justify-content: center;
     flex-direction: column;
     margin: 0 125px;
 
     p {
       width: 350px;
+    }
+    #projectTagsText {
+      display: none;
     }
   }
 }

@@ -2,6 +2,10 @@
 
 #projectDetailDesktopContainer {
   margin: 94px $desktop-left-right-margin 115px $desktop-left-right-margin;
+
+  @include for-tablet-only {
+    margin: 94px 39px 80px 39px;
+  }
 }
 #projectDetailHeroImageDesktopContainer {
   margin-bottom: 115px;
