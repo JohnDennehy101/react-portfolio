@@ -1,7 +1,7 @@
 import '../scss/contactOverview.scss'
 const ContactOverview = () => {
   return (
-    <>
+    <div id='contactOverview'>
       <div id='sidebarContact'>
         <h3>Get In Touch</h3>
       </div>
@@ -29,7 +29,7 @@ const ContactOverview = () => {
 
         {/* </div> */}
       </div>
-    </>
+    </div>
   )
 }
 

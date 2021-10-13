@@ -1,0 +1,55 @@
+@import './variables';
+
+#contactFormContainer {
+  margin-top: 48px;
+  display: flex;
+}
+
+#contactFormSidebar {
+  width: 100%;
+
+  h3 {
+    font-family: $ibarra-real-nova-font-family;
+    font-size: 40px;
+    line-height: 42px;
+    color: #33323d;
+  }
+}
+
+#contactFormMain {
+  width: 100%;
+
+  .formFieldContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  label {
+    font-family: $public-sans-font-family;
+    color: #33323d;
+    font-size: 13px;
+    font-weight: bold;
+    line-height: 30px;
+  }
+  .formField {
+    margin-top: 8px;
+    margin-bottom: 24px;
+    background-color: rgba(51, 50, 61, 0.1);
+    border: none;
+    min-height: 48px;
+    color: #33323d;
+    font-family: $public-sans-font-family;
+    padding-left: 16px;
+    padding-top: 9px;
+    font-size: 13px;
+    line-height: 30px;
+  }
+  .formField::placeholder {
+    opacity: 0.4;
+    font-family: $public-sans-font-family;
+  }
+
+  #message {
+    height: 96px;
+  }
+}
