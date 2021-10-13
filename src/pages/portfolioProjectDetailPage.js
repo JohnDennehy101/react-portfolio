@@ -4,11 +4,12 @@ import ProjectDetailHeroImage from '../components/projectDetailHeroImage'
 import IndividualProjectOverview from '../components/individualProjectOverview'
 import ContactMeCallToAction from '../components/contactMeCallToAction'
 import '../scss/projectDetailsPage.scss'
-// import '../scss/individualProjectOverview.scss'
-import { Link } from 'react-router-dom'
 import { isMobileOnly } from 'react-device-detect'
 import DesktopNextNavigator from '../components/desktopNextNavigator'
 import MobileNextNavigator from '../components/mobileNextNavigator'
+import DesktopPreviousNavigator from '../components/desktopPreviousNavigator'
+import IndividualProjectBackground from '../components/individualProjectBackground'
+import IndividualProjectStaticPreview from '../components/individualProjectStaticPreview'
 
 const PortfolioProjectDetailPage = () => {
   const { id } = useParams()
@@ -43,30 +44,16 @@ const PortfolioProjectDetailPage = () => {
             />
           </div>
           <div id='main'>
-            <article>
-              <h3>Project Background</h3>
-              <p>{project.description}</p>
-            </article>
-            <article>
-              <h3>Static Previews</h3>
-              <img src='/images/detail/desktop/image-bookmark-preview-1.jpg' alt='first screenshot preview of project' />
-              <img src='/images/detail/desktop/image-bookmark-preview-2.jpg' alt='second screenshot preview of project' />
-            </article>
+            <IndividualProjectBackground background={project.description} />
+            <IndividualProjectStaticPreview imagePaths={project.imagePreviews} />
           </div>
         </div>
 
         <div id='projectNavigator'>
-          <div className='projectNavigatorOptionContainer'>
-            <Link to={`/portfolio/${previousProjectIndex}`}>
-              <div className='arrowContainer'>
-                <img src='/images/icons/arrow-left.svg' alt='left arrow' />
-              </div>
-              <div className='projectNavigatorOption'>
-                <h3>{ProjectsData[previousProjectIndex].title}</h3>
-                <p>Previous Project</p>
-              </div>
-            </Link>
-          </div>
+          <DesktopPreviousNavigator
+            previousProjectIndex={previousProjectIndex}
+            previousProjectTitle={ProjectsData[previousProjectIndex].title}
+          />
           {!isMobileOnly ? (
             <DesktopNextNavigator nextProjectIndex={nextProjectIndex} nextProjectTitle={ProjectsData[nextProjectIndex].title} />
           ) : (
