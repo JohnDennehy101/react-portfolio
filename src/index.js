@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Switch, Route, Redirect } from 'react-router-d
 import HomePage from './pages/homePage'
 import PortfolioPage from './pages/portfolioPage'
 import PortfolioProjectDetailPage from './pages/portfolioProjectDetailPage'
+import ContactPage from './pages/contactPage'
 import Header from './components/header'
 import Footer from './components/footer'
 import '../src/scss/index.scss'
@@ -19,6 +20,7 @@ const App = () => {
             <Route component={HomePage} exact path='/' />
             <Route component={PortfolioPage} exact path='/portfolio' />
             <Route component={PortfolioProjectDetailPage} path='/portfolio/:id' />
+            <Route component={ContactPage} path='/contact' />
             <Redirect from='*' to='/' />
           </Switch>
         </div>

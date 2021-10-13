@@ -1,0 +1,7 @@
+@import './variables';
+
+#contact {
+  margin: 94px $desktop-left-right-margin 109px $desktop-left-right-margin;
+  border-top: 1px solid rgba(51, 50, 61, 0.15);
+  display: flex;
+}
