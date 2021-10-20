@@ -24,6 +24,20 @@
     <title>John Dennehy | Software Developer</title>
   </head>
   <body>
+    <form name="contact" netlify netlify-honeypot="bot-field" hidden>
+      <div className="formFieldContainer">
+        <label for="name">Name</label>
+        <input type="text" className="formField" id="name" placeholder="Your Name" />
+      </div>
+      <div className="formFieldContainer">
+        <label for="email">Email</label>
+        <input type="email" className="formField" id="email" placeholder="email@example.com" />
+      </div>
+      <div className="formFieldContainer">
+        <label for="message">Message</label>
+        <textarea id="message" className="formField" name="w3review" rows="4" cols="50" placeholder="How can I help?"></textarea>
+      </div>
+    </form>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
     <!--

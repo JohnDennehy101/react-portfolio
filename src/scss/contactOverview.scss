@@ -2,6 +2,13 @@
 
 #contactOverview {
   display: flex;
+
+  @include for-tablet-only {
+    flex-direction: column;
+  }
+  @include for-phone-only {
+    flex-direction: column;
+  }
 }
 
 #mainContact {
@@ -33,6 +40,15 @@
     opacity: 0.8;
     line-height: 30px;
   }
+
+  @include for-tablet-only {
+    margin-top: 24px;
+    padding-bottom: 32px;
+  }
+  @include for-phone-only {
+    margin-top: 24px;
+    padding-bottom: 32px;
+  }
 }
 
 #sidebarContact {
@@ -44,5 +60,14 @@
     font-size: 40px;
     line-height: 42px;
     color: #33323d;
+  }
+
+  @include for-tablet-only {
+    border-bottom: none;
+    margin-top: 32px;
+  }
+  @include for-phone-only {
+    border-bottom: none;
+    margin-top: 24px;
   }
 }

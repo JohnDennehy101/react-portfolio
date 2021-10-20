@@ -7,18 +7,20 @@ const ContactForm = () => {
       </div>
       <div id='contactFormMain'>
         <form>
+          <input type='hidden' name='form-name' value='contact' />
           <div className='formFieldContainer'>
-            <label for='name'>Name</label>
+            <label htmlFor='name'>Name</label>
             <input type='text' className='formField' id='name' placeholder='Your Name' />
           </div>
           <div className='formFieldContainer'>
-            <label for='email'>Email</label>
+            <label htmlFor='email'>Email</label>
             <input type='email' className='formField' id='email' placeholder='email@example.com' />
           </div>
           <div className='formFieldContainer'>
-            <label for='message'>Message</label>
+            <label htmlFor='message'>Message</label>
             <textarea id='message' className='formField' name='w3review' rows='4' cols='50' placeholder='How can I help?'></textarea>
           </div>
+          <button>SEND MESSAGE</button>
         </form>
       </div>
     </div>

@@ -3,4 +3,12 @@
 #contact {
   margin: 94px $desktop-left-right-margin 109px $desktop-left-right-margin;
   border-top: 1px solid rgba(51, 50, 61, 0.15);
+
+  @include for-tablet-only {
+    width: 90%;
+    margin: 94px auto 96px auto;
+  }
+  @include for-phone-only {
+    margin: 40px $mobile-left-right-margin 80px $mobile-left-right-margin;
+  }
 }
