@@ -4,7 +4,7 @@ import ProjectDetailHeroImage from '../components/projectDetailHeroImage'
 import IndividualProjectOverview from '../components/individualProjectOverview'
 import ContactMeCallToAction from '../components/contactMeCallToAction'
 import '../scss/projectDetailsPage.scss'
-import { isMobileOnly } from 'react-device-detect'
+import { isMobileOnly, isTablet } from 'react-device-detect'
 import DesktopNextNavigator from '../components/desktopNextNavigator'
 import MobileNextNavigator from '../components/mobileNextNavigator'
 import DesktopPreviousNavigator from '../components/desktopPreviousNavigator'
@@ -16,6 +16,9 @@ const PortfolioProjectDetailPage = () => {
   let previousProjectIndex, nextProjectIndex
   const allProjects = ProjectsData
   const project = ProjectsData[id]
+
+  const bannerImagePath = isMobileOnly ? project.bannerImage.mobile : isTablet ? project.bannerImage.tablet : project.bannerImage.desktop
+  const previewImagePaths = isMobileOnly ? project.imagePreviews.mobile : isTablet ? project.imagePreviews.tablet : project.imagePreviews.desktop
 
   if (Number(id) !== allProjects.length - 1) {
     nextProjectIndex = Number(id) + 1
@@ -32,7 +35,7 @@ const PortfolioProjectDetailPage = () => {
   return (
     <>
       <div id={'projectDetailContainer'}>
-        <ProjectDetailHeroImage />
+        <ProjectDetailHeroImage bannerImage={bannerImagePath} />
 
         <div id='projectDetailInfoContainer'>
           <div id='sidebar'>
@@ -45,7 +48,7 @@ const PortfolioProjectDetailPage = () => {
           </div>
           <div id='main'>
             <IndividualProjectBackground background={project.description} />
-            <IndividualProjectStaticPreview imagePaths={project.imagePreviews} />
+            <IndividualProjectStaticPreview imagePaths={previewImagePaths} />
           </div>
         </div>
 

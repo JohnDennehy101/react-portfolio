@@ -1,9 +1,10 @@
 import '../scss/projectDetailHeroImage.scss'
 
-const ProjectDetailHeroImage = () => {
+const ProjectDetailHeroImage = (props) => {
+  
   return (
     <div id='projectDetailHeroImageContainer'>
-      <img src='/images/detail/desktop/image-bookmark-hero.jpg' alt='project screenshot banner display' />
+      <img src={props.bannerImage} alt='project screenshot banner display' />
     </div>
   )
 }

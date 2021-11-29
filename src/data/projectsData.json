@@ -5,7 +5,23 @@
     "description": "This project was a front-end  challenge from Frontend Mentor. It’s a platform that enables you to practice building websites to a design and project brief. Each challenge includes mobile and desktop designs to show how the website should look at different screen sizes. Creating these projects has helped me refine my workflow and solve real-world coding problems. I’ve learned something new with each project, helping me to improve and adapt my style.",
     "categories": ["Interaction Design", "Frontend Development"],
     "technologies": ["HTML", "CSS", "JS"],
-    "imagePreviews": ["/images/detail/desktop/image-bookmark-preview-1.jpg", "/images/detail/desktop/image-bookmark-preview-2.jpg"]
+    "imagePreviews": {
+      "desktop": [
+        "/images/detail/desktop/project_1-image-preview-1.png",
+        "/images/detail/desktop/project_1-image-preview-2.png"
+      ],
+      "tablet": [
+
+      ],
+      "mobile": [
+
+      ]
+    },
+    "bannerImage": {
+      "desktop": "/images/detail/desktop/project_1-image-hero.png",
+      "tablet": "/images/detail/tablet/image-bookmark-preview-1.jpg",
+      "mobile": "/images/detail/desktop/image-bookmark-preview-1.jpg"
+    }
   },
   {
     "title": "Bookmark",
@@ -13,7 +29,23 @@
     "description": "This project was a front-end  challenge from Frontend Mentor. It’s a platform that enables you to practice building websites to a design and project brief. Each challenge includes mobile and desktop designs to show how the website should look at different screen sizes. Creating these projects has helped me refine my workflow and solve real-world coding problems. I’ve learned something new with each project, helping me to improve and adapt my style.",
     "categories": ["Interaction Design", "Frontend Development"],
     "technologies": ["HTML", "CSS", "JS"],
-    "imagePreviews": ["/images/detail/desktop/image-bookmark-preview-1.jpg", "/images/detail/desktop/image-bookmark-preview-2.jpg"]
+    "imagePreviews": {
+      "desktop": [
+        "/images/detail/desktop/project_2-image-preview-1.png",
+        "/images/detail/desktop/project_2-image-preview-2.png"
+      ],
+      "tablet": [
+
+      ],
+      "mobile": [
+
+      ]
+    },
+    "bannerImage": {
+      "desktop": "/images/detail/desktop/project_2-image-hero.png",
+      "tablet": "/images/detail/tablet/image-bookmark-preview-1.jpg",
+      "mobile": "/images/detail/desktop/image-bookmark-preview-1.jpg"
+    }
   },
   {
     "title": "Insure",
@@ -21,7 +53,23 @@
     "description": "This project was a front-end  challenge from Frontend Mentor. It’s a platform that enables you to practice building websites to a design and project brief. Each challenge includes mobile and desktop designs to show how the website should look at different screen sizes. Creating these projects has helped me refine my workflow and solve real-world coding problems. I’ve learned something new with each project, helping me to improve and adapt my style.",
     "categories": ["Interaction Design", "Frontend Development"],
     "technologies": ["HTML", "CSS", "JS"],
-    "imagePreviews": ["/images/detail/desktop/image-bookmark-preview-1.jpg", "/images/detail/desktop/image-bookmark-preview-2.jpg"]
+    "imagePreviews": {
+      "desktop": [
+        "/images/detail/desktop/project_3-image-preview-1.png",
+        "/images/detail/desktop/project_3-image-preview-2.png"
+      ],
+      "tablet": [
+
+      ],
+      "mobile": [
+
+      ]
+    },
+    "bannerImage": {
+      "desktop": "/images/detail/desktop/project_3-image-hero.png",
+      "tablet": "/images/detail/tablet/image-bookmark-preview-1.jpg",
+      "mobile": "/images/detail/desktop/image-bookmark-preview-1.jpg"
+    }
   },
   {
     "title": "Fylo",
@@ -29,6 +77,22 @@
     "description": "This project was a front-end  challenge from Frontend Mentor. It’s a platform that enables you to practice building websites to a design and project brief. Each challenge includes mobile and desktop designs to show how the website should look at different screen sizes. Creating these projects has helped me refine my workflow and solve real-world coding problems. I’ve learned something new with each project, helping me to improve and adapt my style.",
     "categories": ["Interaction Design", "Frontend Development"],
     "technologies": ["HTML", "CSS", "JS"],
-    "imagePreviews": ["/images/detail/desktop/image-bookmark-preview-1.jpg", "/images/detail/desktop/image-bookmark-preview-2.jpg"]
+    "imagePreviews": {
+      "desktop": [
+        "/images/detail/desktop/project_4-image-preview-1.png",
+        "/images/detail/desktop/project_4-image-preview-2.png"
+      ],
+      "tablet": [
+
+      ],
+      "mobile": [
+
+      ]
+    },
+    "bannerImage": {
+      "desktop": "/images/detail/desktop/project_4-image-hero.png",
+      "tablet": "/images/detail/tablet/image-bookmark-preview-1.jpg",
+      "mobile": "/images/detail/desktop/image-bookmark-preview-1.jpg"
+    }
   }
 ]
