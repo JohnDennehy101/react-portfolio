@@ -21,6 +21,11 @@
     color: #33323d;
     border: 1px solid #33323d;
     background-color: #ffffff;
+    transition: all 0.6s;
+  }
+
+  button:hover {
+    @include secondary-button-hover-state;
   }
 
   #divider {
