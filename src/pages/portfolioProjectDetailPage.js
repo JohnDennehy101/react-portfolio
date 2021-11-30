@@ -44,6 +44,8 @@ const PortfolioProjectDetailPage = () => {
               overview={project.overview}
               projectCategories={project.categories}
               projectTechnologies={project.technologies}
+              projectWebLink={project.webLink}
+              projectCodeLink={project.codeLink}
             />
           </div>
           <div id='main'>

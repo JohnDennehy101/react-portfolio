@@ -2,12 +2,14 @@ import '../scss/individualProjectOverview.scss'
 import { isMobileOnly, isTabletOnly } from 'react-device-detect'
 import { Link } from 'react-router-dom'
 
-const IndividualProjectOverview = ({ title, overview, index, projectCategories, projectTechnologies }) => {
+const IndividualProjectOverview = ({ title, overview, index, projectCategories, projectTechnologies, projectWebLink, projectCodeLink }) => {
+  let portfolioDetailPage = false;
   let projectCategoriesString = ''
   let projectTechnologiesString = ''
   let projectTextContainerId = 'individualProjectTextContainer'
 
   if (projectCategories != null) {
+    portfolioDetailPage = true;
     for (let categoryIndex in projectCategories) {
       if (Number(categoryIndex) !== projectCategories.length - 1) {
         projectCategoriesString += ` ${projectCategories[categoryIndex]} /`
@@ -25,33 +27,32 @@ const IndividualProjectOverview = ({ title, overview, index, projectCategories, 
       }
     }
   }
-  //   const individualProjectSectionId = isMobileOnly
-  //     ? 'individualProjectSectionMobile'
-  //     : isTablet
-  //     ? 'individualProjectSectionTablet'
-  //     : 'individualProjectSectionDesktop'
-  //   const imageFolder = isMobileOnly ? 'mobile' : isTablet ? 'tablet' : 'desktop'
   return (
     <>
-      {/* <section id={individualProjectSectionId}>
-        <div>
-            <img src={`/images/portfolio/${imageFolder}/project_${index + 1}.png`} alt='project screenshot' />
-        </div> */}
       {!isTabletOnly || !isMobileOnly ? (
         <div id={projectTextContainerId}>
           <h2 className='individualProjectTitle'>{title}</h2>
           <p className='individualProjectOverview'>{overview}</p>
-          <p className='individualProjectTags'> {projectCategoriesString} </p>
+          {portfolioDetailPage === true ?
+          <><p className='individualProjectTags'> {projectCategoriesString} </p>
           <p className='individualProjectTags' id='projectTagsText'>
             {' '}
             {projectTechnologiesString}{' '}
-          </p>
-
-          <Link to={`/portfolio/${index}`}>
+          </p> </> : <></>
+          }
+          
+          {portfolioDetailPage === true ? <><a href={projectWebLink} target="_blank" rel="noreferrer" style={{marginBottom: '10px'}}>
+            <button type='button' className='primaryButton'>
+              VIEW LIVE
+            </button> </a>
+          <a href={projectCodeLink} target="_blank" rel="noreferrer">
             <button type='button' className='secondaryButton'>
-              VIEW PROJECT
+              VIEW CODE
             </button>
-          </Link>
+          </a> </> : <Link to={`/portfolio/${index}`}> <button type='button' className='secondaryButton'>
+              VIEW PROJECT
+            </button></Link>}
+          
         </div>
       ) : (
         <div id={projectTextContainerId}>
@@ -62,11 +63,17 @@ const IndividualProjectOverview = ({ title, overview, index, projectCategories, 
             {projectTechnologiesString}{' '}
           </p>
 
-          <Link to={`/portfolio/${index}`}>
+          {portfolioDetailPage === true ? <><a href={projectWebLink} target="_blank" rel="noreferrer" style={{marginBottom: '10px'}}>
+            <button type='button' className='primaryButton'>
+              VIEW LIVE
+            </button> </a>
+          <a href={projectCodeLink} target="_blank" rel="noreferrer">
             <button type='button' className='secondaryButton'>
-              VIEW PROJECT
+              VIEW CODE
             </button>
-          </Link>
+          </a> </> : <Link to={`/portfolio/${index}`}> <button type='button' className='secondaryButton'>
+              VIEW PROJECT
+            </button></Link>}
         </div>
       )}
       <div id={'projectOverviewNonDesktop'}>

@@ -12,7 +12,7 @@ const ContactMeCallToAction = () => {
     <section id={contactMeCallToActionSectionId}>
       <h2>Interested in doing a project together?</h2>
       <div id='divider'></div>
-      <Link to='/dashboard'>
+      <Link to='/contact'>
         <button type='button'>CONTACT ME</button>
       </Link>
     </section>

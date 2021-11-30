@@ -20,13 +20,9 @@ const AboutSection = () => {
         <div id='aboutInfoContainer' className='aboutInfoContainerDiv'>
           <h2 className='aboutSectionTitle'>About Me</h2>
           <p className='aboutSectionContent'>
-            I’m a junior front-end developer looking for a new role in an exciting company. I focus on writing accessible HTML, using modern
-            CSS practices and writing clean JavaScript. When writing JavaScript code, I mostly use React, but I can adapt to whatever tools
-            are required. I’m based in London, UK, but I’m happy working remotely and have experience in remote teams. When I’m not coding,
-            you’ll find me outdoors. I love being out in nature whether that’s going for a walk, run or cycling. I’d love you to check out
-            my work.
+            Full-stack software developer with extensive experience in the full software development lifecycle in an agile environment. I am an articulate communicator with a flexible approach to work. Seeking my second role in software development, I am an innovative team player with a passion for technology and continuous learning. I aim to apply my Computer Science skills to real-world problems through collaboration with colleagues.
           </p>
-          <Link to='/dashboard'>
+          <Link to='/portfolio'>
             <button type='button' className='secondaryButton'>
               GO TO PORTFOLIO
             </button>

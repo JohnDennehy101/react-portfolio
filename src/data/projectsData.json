@@ -23,7 +23,9 @@
       "desktop": "/images/detail/desktop/project_1-image-hero.png",
       "tablet": "/images/detail/tablet/project_1-image-hero.png",
       "mobile": "/images/detail/mobile/project_1-image-hero.png"
-    }
+    },
+    "webLink": "https://tmdb-content-app.netlify.app",
+    "codeLink": "https://github.com/JohnDennehy101/ictskills2-assignment"
   },
   {
     "title": "Recipes App",
@@ -49,8 +51,11 @@
       "desktop": "/images/detail/desktop/project_2-image-hero.png",
       "tablet": "/images/detail/tablet/project_2-image-hero.png",
       "mobile": "/images/detail/mobile/project_2-image-hero.png"
-    }
+    },
+    "webLink": "https://recipe-repository-collection.herokuapp.com",
+    "codeLink": "https://github.com/JohnDennehy101/recipeRepository"
   },
+
   {
     "title": "Gym App",
     "overview": "This web application allows users to sign up and create health assessments on a number of different metrics (weight, waist, chest measurements etc.).",
@@ -75,7 +80,9 @@
       "desktop": "/images/detail/desktop/project_3-image-hero.png",
       "tablet": "/images/detail/tablet/project_3-image-hero.png",
       "mobile": "/images/detail/mobile/project_3-image-hero.png"
-    }
+    },
+    "webLink": "https://play-gym-javascript.herokuapp.com",
+    "codeLink": "https://github.com/JohnDennehy101/play-gym-application-js"
   },
   {
     "title": "Placemarks",
@@ -101,6 +108,8 @@
       "desktop": "/images/detail/desktop/project_4-image-hero.png",
       "tablet": "/images/detail/tablet/project_4-image-hero.png",
       "mobile": "/images/detail/mobile/project_4-image-hero.png"
-    }
+    },
+    "webLink": "https://point-of-interest-v1.herokuapp.com/",
+    "codeLink": "https://github.com/JohnDennehy101/pointOfInterestV1"
   }
 ]
