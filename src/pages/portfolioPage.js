@@ -12,7 +12,7 @@ const PortfolioPage = () => {
   const imageFolder = isMobileOnly ? 'mobile' : isTablet ? 'tablet' : 'desktop'
 
   return ProjectsData.map((project, i) => (
-    <section id={individualProjectSectionId}>
+    <section id={individualProjectSectionId} key={i}>
       <div>
         <img src={`/images/portfolio/${imageFolder}/project_${i + 1}.png`} alt='project screenshot' />
       </div>

@@ -20,7 +20,10 @@ const AboutSection = () => {
         <div id='aboutInfoContainer' className='aboutInfoContainerDiv'>
           <h2 className='aboutSectionTitle'>About Me</h2>
           <p className='aboutSectionContent'>
-            Full-stack software developer with extensive experience in the full software development lifecycle in an agile environment. I am an articulate communicator with a flexible approach to work. Seeking my second role in software development, I am an innovative team player with a passion for technology and continuous learning. I aim to apply my Computer Science skills to real-world problems through collaboration with colleagues.
+            Full-stack software developer with extensive experience in the full software development lifecycle in an agile environment. I am
+            an articulate communicator with a flexible approach to work. Seeking my second role in software development, I am an innovative
+            team player with a passion for technology and continuous learning. I aim to apply my Computer Science skills to real-world
+            problems through collaboration with colleagues.
           </p>
           <Link to='/portfolio'>
             <button type='button' className='secondaryButton'>

@@ -6,18 +6,9 @@
     "categories": ["REST API", "Full-Stack Development"],
     "technologies": ["React", "Firebase", "Material UI"],
     "imagePreviews": {
-      "desktop": [
-        "/images/detail/desktop/project_1-image-preview-1.png",
-        "/images/detail/desktop/project_1-image-preview-2.png"
-      ],
-      "tablet": [
-         "/images/detail/tablet/project_1-image-preview-1.png",
-        "/images/detail/tablet/project_1-image-preview-2.png"
-      ],
-      "mobile": [
-         "/images/detail/mobile/project_1-image-preview-1.png",
-        "/images/detail/mobile/project_1-image-preview-2.png"
-      ]
+      "desktop": ["/images/detail/desktop/project_1-image-preview-1.png", "/images/detail/desktop/project_1-image-preview-2.png"],
+      "tablet": ["/images/detail/tablet/project_1-image-preview-1.png", "/images/detail/tablet/project_1-image-preview-2.png"],
+      "mobile": ["/images/detail/mobile/project_1-image-preview-1.png", "/images/detail/mobile/project_1-image-preview-2.png"]
     },
     "bannerImage": {
       "desktop": "/images/detail/desktop/project_1-image-hero.png",
@@ -34,18 +25,9 @@
     "categories": ["REST API", "Full-Stack Development"],
     "technologies": ["Node", "MongoDB", "JS"],
     "imagePreviews": {
-      "desktop": [
-        "/images/detail/desktop/project_2-image-preview-1.png",
-        "/images/detail/desktop/project_2-image-preview-2.png"
-      ],
-      "tablet": [
-         "/images/detail/tablet/project_2-image-preview-1.png",
-        "/images/detail/tablet/project_2-image-preview-2.png"
-      ],
-      "mobile": [
-         "/images/detail/mobile/project_2-image-preview-1.png",
-        "/images/detail/mobile/project_2-image-preview-2.png"
-      ]
+      "desktop": ["/images/detail/desktop/project_2-image-preview-1.png", "/images/detail/desktop/project_2-image-preview-2.png"],
+      "tablet": ["/images/detail/tablet/project_2-image-preview-1.png", "/images/detail/tablet/project_2-image-preview-2.png"],
+      "mobile": ["/images/detail/mobile/project_2-image-preview-1.png", "/images/detail/mobile/project_2-image-preview-2.png"]
     },
     "bannerImage": {
       "desktop": "/images/detail/desktop/project_2-image-hero.png",
@@ -56,25 +38,16 @@
     "codeLink": "https://github.com/JohnDennehy101/recipeRepository"
   },
 
-    {
+  {
     "title": "Gym App",
     "overview": "This web application allows users to sign up and create health assessments on a number of different metrics (weight, waist, chest measurements etc.).",
     "description": "Users can view progress over time via a range of charts (via Chart.js library). They can also set goals on each metric and are presented with a view on whether the goal was achieved, missed or still open (if the goal date is still in the future). A settings page allows users to update account details. 'Trainer' accounts allow a trainer to login and add comments to any of the assessments for a member (members can see these comments on their dashboard). Trainers can also delete member accounts.",
     "categories": ["Interaction Design", "Frontend Development"],
     "technologies": ["Node", "CSS", "JS"],
     "imagePreviews": {
-      "desktop": [
-        "/images/detail/desktop/project_3-image-preview-1.png",
-        "/images/detail/desktop/project_3-image-preview-2.png"
-      ],
-      "tablet": [
-         "/images/detail/tablet/project_3-image-preview-1.png",
-        "/images/detail/tablet/project_3-image-preview-2.png"
-      ],
-      "mobile": [
-          "/images/detail/mobile/project_3-image-preview-1.png",
-        "/images/detail/mobile/project_3-image-preview-2.png"
-      ]
+      "desktop": ["/images/detail/desktop/project_3-image-preview-1.png", "/images/detail/desktop/project_3-image-preview-2.png"],
+      "tablet": ["/images/detail/tablet/project_3-image-preview-1.png", "/images/detail/tablet/project_3-image-preview-2.png"],
+      "mobile": ["/images/detail/mobile/project_3-image-preview-1.png", "/images/detail/mobile/project_3-image-preview-2.png"]
     },
     "bannerImage": {
       "desktop": "/images/detail/desktop/project_3-image-hero.png",
@@ -92,18 +65,9 @@
     "categories": ["REST APIs", "Full-Stack Development"],
     "technologies": ["Hapi", "UIKit", "JS"],
     "imagePreviews": {
-      "desktop": [
-        "/images/detail/desktop/project_4-image-preview-1.png",
-        "/images/detail/desktop/project_4-image-preview-2.png"
-      ],
-      "tablet": [
-        "/images/detail/tablet/project_4-image-preview-1.png",
-        "/images/detail/tablet/project_4-image-preview-2.png"
-      ],
-      "mobile": [
-        "/images/detail/mobile/project_4-image-preview-1.png",
-        "/images/detail/mobile/project_4-image-preview-2.png"
-      ]
+      "desktop": ["/images/detail/desktop/project_4-image-preview-1.png", "/images/detail/desktop/project_4-image-preview-2.png"],
+      "tablet": ["/images/detail/tablet/project_4-image-preview-1.png", "/images/detail/tablet/project_4-image-preview-2.png"],
+      "mobile": ["/images/detail/mobile/project_4-image-preview-1.png", "/images/detail/mobile/project_4-image-preview-2.png"]
     },
     "bannerImage": {
       "desktop": "/images/detail/desktop/project_4-image-hero.png",
@@ -113,5 +77,4 @@
     "webLink": "https://point-of-interest-v1.herokuapp.com/",
     "codeLink": "https://github.com/JohnDennehy101/pointOfInterestV1"
   }
-
 ]

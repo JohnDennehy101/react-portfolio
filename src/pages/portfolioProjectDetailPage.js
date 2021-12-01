@@ -18,7 +18,11 @@ const PortfolioProjectDetailPage = () => {
   const project = ProjectsData[id]
 
   const bannerImagePath = isMobileOnly ? project.bannerImage.mobile : isTablet ? project.bannerImage.tablet : project.bannerImage.desktop
-  const previewImagePaths = isMobileOnly ? project.imagePreviews.mobile : isTablet ? project.imagePreviews.tablet : project.imagePreviews.desktop
+  const previewImagePaths = isMobileOnly
+    ? project.imagePreviews.mobile
+    : isTablet
+    ? project.imagePreviews.tablet
+    : project.imagePreviews.desktop
 
   if (Number(id) !== allProjects.length - 1) {
     nextProjectIndex = Number(id) + 1

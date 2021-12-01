@@ -15,7 +15,7 @@ const Banner = () => {
         {!isMobileOnly ? (
           <div id={bannerSectionOverlayId} className='bannerSectionOverlayDiv'>
             <h1 className='bannerSectionTitle'>Hey, I'm John Dennehy, a full-stack software developer.</h1>
-            <a href="#aboutInfoContainer">
+            <a href='#aboutInfoContainer'>
               <button type='button'>
                 <div id='dropdownButtonDiv' style={{ backgroundImage: 'url(/images/icons/down-arrows.svg)' }}>
                   <img src='/images/icons/down-arrows.svg' alt='Down arrows icon' />
@@ -31,7 +31,7 @@ const Banner = () => {
       {isMobileOnly ? (
         <div id={bannerSectionOverlayId} className='bannerSectionOverlayDiv'>
           <h1>Hey, I'm John Dennehy, a full-stack software developer.</h1>
-          <a href ="#aboutInfoContainer">
+          <a href='#aboutInfoContainer'>
             <button type='button'>
               <div id='dropdownButtonDiv' style={{ backgroundImage: 'url(/images/icons/down-arrows.svg)' }}>
                 <img src='/images/icons/down-arrows.svg' alt='Banner hero shot of computer monitor' />

@@ -98,6 +98,13 @@
   }
 }
 
+#individualProjectSectionTablet:nth-of-type(even) {
+  #individualProjectTextContainer {
+    grid-column: 1;
+    grid-row: 1;
+  }
+}
+
 #individualProjectSectionTablet {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
@@ -116,7 +123,8 @@
     border-bottom: 1px solid rgba(51, 50, 61, 0.15);
     display: flex;
     flex-direction: column;
-    margin-left: 69px;
+    margin-left: 60px;
+    margin-right: 60px;
 
     p {
       width: 100%;
@@ -124,6 +132,14 @@
       padding-bottom: 35px;
     }
   }
+  // #individualProjectTextContainer:nth-of-type(even) {
+  //   margin-left: 0px;
+  //   margin-right: 69px;
+  // }
+  // #individualProjectTextContainer:nth-of-type(odd) {
+  //   margin-left: 69px;
+  //   margin-right: 0px;
+  // }
 }
 
 #individualProjectSectionMobile {
