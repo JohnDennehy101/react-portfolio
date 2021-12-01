@@ -9,19 +9,19 @@ const ContactForm = () => {
         <h3>Contact Me</h3>
       </div>
       <div id='contactFormMain'>
-        <form>
+        <form name='contact' method='post'>
           <input type='hidden' name='form-name' value='contact' />
           <div className='formFieldContainer'>
             <label htmlFor='name'>Name</label>
-            <input type='text' className='formField' name='name' id='name' placeholder='Your Name' />
+            <input type='text' className='formField' name='name' id='name' placeholder='Your Name' required/>
           </div>
           <div className='formFieldContainer'>
             <label htmlFor='email'>Email</label>
-            <input type='email' className='formField' name='email' id='email' placeholder='email@example.com' />
+            <input type='email' className='formField' name='email' id='email' placeholder='email@example.com' required />
           </div>
           <div className='formFieldContainer'>
             <label htmlFor='message'>Message</label>
-            <textarea id='message' className='formField' name='message' rows='4' cols='50' placeholder='How can I help?'></textarea>
+            <textarea id='message' className='formField' name='message' rows='4' cols='50' placeholder='How can I help?' required></textarea>
           </div>
           <button onClick={handleButtonClick}>SEND MESSAGE</button>
         </form>

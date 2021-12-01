@@ -132,21 +132,12 @@
       padding-bottom: 35px;
     }
   }
-  // #individualProjectTextContainer:nth-of-type(even) {
-  //   margin-left: 0px;
-  //   margin-right: 69px;
-  // }
-  // #individualProjectTextContainer:nth-of-type(odd) {
-  //   margin-left: 69px;
-  //   margin-right: 0px;
-  // }
 }
 
 #individualProjectSectionMobile {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
   height: 688px;
-  //   margin: 80px 39px;
   width: 90%;
   margin: 40px auto;
 
@@ -164,7 +155,6 @@
     flex-direction: column;
     margin-top: 32px;
     padding-bottom: 24px;
-    // margin-left: 69px;
 
     p {
       width: 100%;
