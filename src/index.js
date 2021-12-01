@@ -9,6 +9,7 @@ import ContactPage from './pages/contactPage'
 import Header from './components/header'
 import Footer from './components/footer'
 import '../src/scss/index.scss'
+import ScrollToTop from './components/scrollToTop'
 
 const App = () => {
   return (
@@ -16,6 +17,7 @@ const App = () => {
       <Router>
         <Header />
         <div id='main-content'>
+          <ScrollToTop />
           <Switch>
             <Route component={HomePage} exact path='/' />
             <Route component={PortfolioPage} exact path='/portfolio' />
