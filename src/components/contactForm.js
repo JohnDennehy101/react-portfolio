@@ -1,5 +1,8 @@
 import '../scss/contactForm.scss'
 const ContactForm = () => {
+  const handleButtonClick = (e) => {
+    // e.preventDefault();
+  }
   return (
     <div id='contactFormContainer'>
       <div id='contactFormSidebar'>
@@ -10,17 +13,17 @@ const ContactForm = () => {
           <input type='hidden' name='form-name' value='contact' />
           <div className='formFieldContainer'>
             <label htmlFor='name'>Name</label>
-            <input type='text' className='formField' id='name' placeholder='Your Name' />
+            <input type='text' className='formField' name='name' id='name' placeholder='Your Name' />
           </div>
           <div className='formFieldContainer'>
             <label htmlFor='email'>Email</label>
-            <input type='email' className='formField' id='email' placeholder='email@example.com' />
+            <input type='email' className='formField' name='email' id='email' placeholder='email@example.com' />
           </div>
           <div className='formFieldContainer'>
             <label htmlFor='message'>Message</label>
-            <textarea id='message' className='formField' name='w3review' rows='4' cols='50' placeholder='How can I help?'></textarea>
+            <textarea id='message' className='formField' name='message' rows='4' cols='50' placeholder='How can I help?'></textarea>
           </div>
-          <button>SEND MESSAGE</button>
+          <button onClick={handleButtonClick}>SEND MESSAGE</button>
         </form>
       </div>
     </div>
