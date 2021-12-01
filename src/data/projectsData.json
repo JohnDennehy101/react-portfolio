@@ -56,7 +56,7 @@
     "codeLink": "https://github.com/JohnDennehy101/recipeRepository"
   },
 
-  {
+    {
     "title": "Gym App",
     "overview": "This web application allows users to sign up and create health assessments on a number of different metrics (weight, waist, chest measurements etc.).",
     "description": "Users can view progress over time via a range of charts (via Chart.js library). They can also set goals on each metric and are presented with a view on whether the goal was achieved, missed or still open (if the goal date is still in the future). A settings page allows users to update account details. 'Trainer' accounts allow a trainer to login and add comments to any of the assessments for a member (members can see these comments on their dashboard). Trainers can also delete member accounts.",
@@ -84,6 +84,7 @@
     "webLink": "https://play-gym-javascript.herokuapp.com",
     "codeLink": "https://github.com/JohnDennehy101/play-gym-application-js"
   },
+
   {
     "title": "Placemarks",
     "overview": "A web application that allows users to manage a collection of Irish national monuments.",
@@ -112,4 +113,5 @@
     "webLink": "https://point-of-interest-v1.herokuapp.com/",
     "codeLink": "https://github.com/JohnDennehy101/pointOfInterestV1"
   }
+
 ]
