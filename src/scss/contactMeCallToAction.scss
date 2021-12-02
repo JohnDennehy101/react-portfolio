@@ -6,6 +6,10 @@
   display: flex;
   align-items: center;
 
+  @include for-desktop-monitor-only {
+    justify-content: space-between;
+  }
+
   h2 {
     width: 350px;
     font-family: $ibarra-real-nova-font-family;

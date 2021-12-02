@@ -46,13 +46,23 @@
     height: 600px;
   }
   #aboutInfoContainer {
-    width: 65%;
     height: 600px;
     margin: 0 auto;
     margin-bottom: 115px;
+    @include for-desktop-only {
+      width: 65%;
+    }
+    @include for-desktop-monitor-only {
+      width: 80%;
+    }
   }
   h2 {
-    padding-top: 50px;
+    @include for-desktop-only {
+      padding-top: 50px;
+    }
+    @include for-desktop-monitor-only {
+      padding-top: 23%;
+    }
   }
 
   a {

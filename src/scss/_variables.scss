@@ -25,6 +25,12 @@ $project-tag-font-color: #5fb4a2;
   }
 }
 
+@mixin for-desktop-monitor-only {
+  @media (min-width: 1500px) {
+    @content;
+  }
+}
+
 @mixin primary-button-hover-state {
   background-color: #5fb4a2;
 }
