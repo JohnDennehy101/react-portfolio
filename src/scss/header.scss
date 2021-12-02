@@ -49,6 +49,7 @@ a {
   width: 223px;
   height: 186px;
   position: absolute;
+  display: none;
   right: -70%;
   z-index: 1;
   background-color: $modal-mobile-background-colour;
@@ -106,6 +107,7 @@ a {
   animation-duration: 1s;
   animation-name: slidein;
   animation-fill-mode: forwards;
+  display: block !important;
   right: 32px;
   top: 88px;
 }
