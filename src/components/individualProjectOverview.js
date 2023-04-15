@@ -1,5 +1,5 @@
 import '../scss/individualProjectOverview.scss'
-import { isMobileOnly, isTabletOnly } from 'react-device-detect'
+import { isMobileOnly, isTablet } from 'react-device-detect'
 import { Link } from 'react-router-dom'
 
 const IndividualProjectOverview = ({ title, overview, index, projectCategories, projectTechnologies, projectWebLink, projectCodeLink }) => {
@@ -29,7 +29,7 @@ const IndividualProjectOverview = ({ title, overview, index, projectCategories, 
   }
   return (
     <>
-      {!isTabletOnly && !isMobileOnly ? (
+      {!isTablet && !isMobileOnly ? (
         <div id={projectTextContainerId}>
           <h2 className='individualProjectTitle'>{title}</h2>
           <p className='individualProjectOverview'>{overview}</p>

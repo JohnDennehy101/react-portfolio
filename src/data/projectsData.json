@@ -19,11 +19,11 @@
     "codeLink": "https://github.com/JohnDennehy101/ictskills2-assignment"
   },
   {
-    "title": "Recipes App",
-    "overview": "A web application that allows users to view a collection of recipes and discover new recipes via TheMealDB API.",
-    "description": "Recipe discovery is supported via integration with 3rd party API. Results can be saved to existing collection. Data persistence is provided with MongoDB Atlas cluster. Materialize framework used to ensure that user is provided with responsive design, irrespective of their device.",
+    "title": "Activity Planner",
+    "overview": "A web application where users can plan and organise group events and activities.",
+    "description": "Most suitable dates for the event can be determined via polling functionality. Users can add accommodation information (scraped from booking.com), flight information (scraped from Kayak.com) and tourist attractions (provided from Google Places API) to the event itinerary. Instant chat functionality provided via a WebSocket implementation.",
     "categories": ["REST API", "Full-Stack Development"],
-    "technologies": ["Node", "MongoDB", "JS"],
+    "technologies": ["Vue", "NestJS", "JS", "Python", "Flask", "Socket.io"],
     "imagePreviews": {
       "desktop": ["/images/detail/desktop/project_2-image-preview-1.png", "/images/detail/desktop/project_2-image-preview-2.png"],
       "tablet": ["/images/detail/tablet/project_2-image-preview-1.png", "/images/detail/tablet/project_2-image-preview-2.png"],
@@ -34,8 +34,8 @@
       "tablet": "/images/detail/tablet/project_2-image-hero.png",
       "mobile": "/images/detail/mobile/project_2-image-hero.png"
     },
-    "webLink": "https://recipe-repository-collection.herokuapp.com",
-    "codeLink": "https://github.com/JohnDennehy101/recipeRepository"
+    "webLink": "https://group-activity-planning.netlify.app",
+    "codeLink": "https://github.com/JohnDennehy101/vuejs-frontend-FYP"
   },
 
   {
@@ -54,7 +54,7 @@
       "tablet": "/images/detail/tablet/project_3-image-hero.png",
       "mobile": "/images/detail/mobile/project_3-image-hero.png"
     },
-    "webLink": "https://play-gym-javascript.herokuapp.com",
+    "webLink": "https://gymapplication.xyz",
     "codeLink": "https://github.com/JohnDennehy101/play-gym-application-js"
   },
 
@@ -63,7 +63,7 @@
     "overview": "A web application that allows users to manage a collection of Irish national monuments.",
     "description": "Cloudinary service provides functionality for users to upload multiple images of national monuments. OpenWeather API provides real-time weather data for national monument location coordinates. Application analytics available to admin users via custom database queries to MongoDB collections.",
     "categories": ["REST APIs", "Full-Stack Development"],
-    "technologies": ["Hapi", "UIKit", "JS"],
+    "technologies": ["Hapi", "Svelte", "JS"],
     "imagePreviews": {
       "desktop": ["/images/detail/desktop/project_4-image-preview-1.png", "/images/detail/desktop/project_4-image-preview-2.png"],
       "tablet": ["/images/detail/tablet/project_4-image-preview-1.png", "/images/detail/tablet/project_4-image-preview-2.png"],
@@ -74,7 +74,7 @@
       "tablet": "/images/detail/tablet/project_4-image-hero.png",
       "mobile": "/images/detail/mobile/project_4-image-hero.png"
     },
-    "webLink": "https://point-of-interest-v1.herokuapp.com/",
-    "codeLink": "https://github.com/JohnDennehy101/pointOfInterestV1"
+    "webLink": "https://pointofinterestapplication.netlify.app",
+    "codeLink": "https://github.com/JohnDennehy101/pointOfInterestSvelte"
   }
 ]
